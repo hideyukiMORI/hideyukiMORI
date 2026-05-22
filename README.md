@@ -1,46 +1,51 @@
 # Hideyuki Mori — OSS
 
-Small, explicit web frameworks for **reviewable services** and **JSON APIs** — readable by humans and AI agents alike.
+Small, **convention-visible** frameworks for reviewable JSON APIs — readable by humans and AI agents, without Laravel/Symfony/Django weight.
 
-Promotion strategy and experiment logs: [publication-strategy](https://github.com/hideyukiMORI/publication-strategy)
-
----
-
-## Frameworks
-
-| | Stack | Best for | Start here |
-|---|---|---|---|
-| **[NeNe](https://github.com/hideyukiMORI/NeNe)** | Renovated legacy PHP · Smarty · URL routing · OpenAPI | Small services, legacy-friendly PHP, lower review cost | [Demo](https://nene-php.com/) · [Release v0.2.0](https://github.com/hideyukiMORI/NeNe/releases/tag/v0.2.0) · `git clone` + Docker |
-| **[NENE2](https://github.com/hideyukiMORI/NENE2)** | PHP 8.4 · JSON API first · OpenAPI · MCP · Packagist | New JSON APIs, thin HTML, AI tool boundaries | [Quick Start](https://github.com/hideyukiMORI/NENE2#quick-start) · `composer require hideyukimori/nene2` |
-| **[nene2-python](https://github.com/hideyukiMORI/nene2-python)** | FastAPI · Pydantic v2 · mypy strict · MCP | Same design as NENE2 in Python | [README](https://github.com/hideyukiMORI/nene2-python#installation) · `uv add nene2-python` |
-
-**Not** Laravel/Symfony/Django replacements — intentionally small, convention-visible frameworks.
+**Hub:** [nene2.dev](https://nene2.dev) · **Strategy:** [publication-strategy](https://github.com/hideyukiMORI/publication-strategy)
 
 ---
 
-## Which one?
+## Runtimes
 
-- **Old-school PHP MVC, renovation story** → NeNe  
-- **Modern PHP API + OpenAPI + MCP** → NENE2  
-- **Python, clean architecture, strict typing** → nene2-python  
+One design language. Pick your stack.
+
+| | | Start |
+|---|---|---|
+| **[NeNe](https://github.com/hideyukiMORI/NeNe)** | Renovated legacy PHP · Smarty · URL routing | [Demo](https://nene-php.com/) · [v0.2.0](https://github.com/hideyukiMORI/NeNe/releases/tag/v0.2.0) |
+| **[NENE2](https://github.com/hideyukiMORI/NENE2)** | PHP 8.4 · OpenAPI contract author · MCP catalog | `composer require hideyukimori/nene2` |
+| **[nene2-python](https://github.com/hideyukiMORI/nene2-python)** | FastAPI · mypy strict · parity reference | `uv add nene2-python` |
+| **[nene2-node](https://github.com/hideyukiMORI/nene2-node)** | Hono · TypeScript strict · OpenAPI-compatible | `npm i @hideyukimori/nene2-framework` |
 
 ---
 
-## Field trials & proof
+## NENE2 ecosystem
 
-External sandboxes that exercise each framework outside its main repo:
+Compose with any runtime. OpenAPI stays canonical in **NENE2**.
 
-- [sakura-exhibition-nene2-field-trial](https://github.com/hideyukiMORI/sakura-exhibition-nene2-field-trial) — NENE2 client-style demo (OpenAPI, tests, MCP)
+| | Role | Package |
+|---|---|---|
+| **[nene2-js](https://github.com/hideyukimori/nene2-js)** | Typed client (Node / browser) | `@hideyukimori/nene2-client` |
+| **[nene-mcp](https://github.com/hideyukimori/nene-mcp)** | stdio MCP bridge → HTTP API | `hideyukimori/nene-mcp` |
+
+---
+
+## Start here
+
+| You want… | Go to |
+|---|---|
+| Old-school PHP MVC + renovation story | NeNe |
+| New JSON API in PHP | NENE2 |
+| Same architecture in Python or Node | nene2-python · nene2-node |
+| Call APIs from TS or wire Cursor/Claude | nene2-js · nene-mcp |
+
+Proof sandbox: [sakura-exhibition-nene2-field-trial](https://github.com/hideyukimori/sakura-exhibition-nene2-field-trial)
 
 ---
 
 ## Articles (Japanese)
 
-- NeNe renovation story (Zenn): [source in NeNe repo](https://github.com/hideyukiMORI/NeNe/blob/main/docs/articles/zenn-renovating-legacy-php-framework.md)  
-- Qiita hands-on tutorial — coming soon (NeNe)
+- NeNe renovation (Zenn): [source](https://github.com/hideyukiMORI/NeNe/blob/main/docs/articles/zenn-renovating-legacy-php-framework.md)
+- NeNe hands-on (Qiita) — coming soon
 
----
-
-## Elsewhere
-
-- Website: [ayane.co.jp](https://ayane.co.jp/)
+[ayane.co.jp](https://ayane.co.jp/)
