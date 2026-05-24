@@ -19,6 +19,18 @@ One design language. Pick your stack.
 
 ---
 
+## Showcase product
+
+End-to-end reference app on **NENE2** — lighter and typed vs WordPress-style meta chaos.
+
+| | | Start |
+|---|---|---|
+| **[NeNe Records](https://github.com/hideyukiMORI/nene-records)** | API-first entity platform · headless CMS · React admin · 60+ MCP tools | [`docker compose up --build`](https://github.com/hideyukiMORI/nene-records#quick-start) |
+
+**M1 complete:** entity schema & typed fields, admin UI, JWT auth, publish workflow, public `/view/{type}/{slug}` consumer. Next: M2 team-ready CMS.
+
+---
+
 ## NENE2 ecosystem
 
 Compose with any runtime. OpenAPI stays canonical in **NENE2**.
@@ -37,6 +49,7 @@ Compose with any runtime. OpenAPI stays canonical in **NENE2**.
 | Old-school PHP MVC + renovation story | NeNe |
 | New JSON API in PHP | NENE2 |
 | Same architecture in Python or Node | nene2-python · nene2-node |
+| A working headless CMS demo on NENE2 | **NeNe Records** |
 | Call APIs from TS or wire Cursor/Claude | nene2-js · nene-mcp |
 
 Proof sandbox: [sakura-exhibition-nene2-field-trial](https://github.com/hideyukimori/sakura-exhibition-nene2-field-trial)
@@ -45,7 +58,7 @@ Proof sandbox: [sakura-exhibition-nene2-field-trial](https://github.com/hideyuki
 
 ## Articles (Japanese)
 
-- NeNe renovation (Zenn): [source](https://github.com/hideyukiMORI/NeNe/blob/main/docs/articles/zenn-renovating-legacy-php-framework.md)
+- NeNe renovation (Zenn): [source](https://github.com/hideyukiMORI/NeNe/blob/main/docs/articles/zenn-renovating-legacy-php-framework.md) · [published](https://zenn.dev/xioncc/articles/a2709df3e0de3b)
 - NeNe hands-on (Qiita) — coming soon
 
 [ayane.co.jp](https://ayane.co.jp/)
