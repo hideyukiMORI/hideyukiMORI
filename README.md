@@ -4,7 +4,24 @@
 
 **Hub:** [nene2.dev](https://nene2.dev) · **Strategy:** [publication-strategy](https://github.com/hideyukiMORI/publication-strategy) · **Contact:** [ayane.co.jp](https://ayane.co.jp/)
 
-*Last updated: 2026-06-02 — profile README synced to public repo state.*
+*Last updated: 2026-06-10 — profile README synced to public repo state.*
+
+---
+
+## At a glance
+
+| Category | Numbers |
+| --- | --- |
+| **Tests** | nene2-python **466** · NeNe Records **545 PHPUnit + 157 Playwright** · nene-corpus **357 Playwright** (157 admin + 200 persona) |
+| **Field trials** | NENE2 **349** · nene2-python **282** · nene2-node **187** |
+| **MCP tools** | Records **60** · Concierge **38** · Vault **9** |
+| **Security** | nene-invoice **pentest ✅** · nene-vault **CPA sign-off 🟢** · nene2-python **95 security reviews** |
+| **Languages** | PHP 8.4 · Python 3.14 · TypeScript — same OpenAPI-shaped architecture |
+
+**If you want to go deeper:**
+→ Architecture decisions: [NENE2 ADRs](https://github.com/hideyukiMORI/NENE2/tree/main/docs/adr)
+→ Test quality: [nene2-python tests/](https://github.com/hideyukiMORI/nene2-python/tree/main/tests) · [NeNe Records tests/](https://github.com/hideyukiMORI/nene-records/tree/main/tests)
+→ Security practice: [nene-invoice security audit](https://github.com/hideyukiMORI/nene-invoice/tree/main/docs/security) · [nene-vault compliance review](https://github.com/hideyukiMORI/nene-vault/tree/main/docs/compliance-review)
 
 ---
 
@@ -17,10 +34,10 @@
 | **NeNe Vault** | Phases 0–4 complete — 電子帳簿保存法 archive, admin UI, Tier A ZIP, 9 MCP tools; compliance gate approved |
 | **NeNe Profile** | Normalization API + admin SPA + Playwright E2E — bank CSV → standard output for Clear |
 | **NeNe Clear** | Reconciliation + dunning API + admin UI; Invoice upstream contract wired |
-| **NeNe Concierge** | Scenario engine, admin SPA, embed widget, action engine (email / Slack / Chatwork), 22 MCP tools |
+| **NeNe Concierge** | Scenario engine, admin SPA, embed widget, action engine (email / Slack / Chatwork), 38 MCP tools |
 | **NeNe Corpus** | Cited knowledge chat — ingest, embed widget, Tier A installer, 157 Playwright specs |
 | **NeNe Suite** | Phase 1 installer API + apex shell — multi-app orchestrator with professional sign-off on record |
-| **NeNe Records** | [v0.4.0](https://github.com/hideyukiMORI/nene-records/releases) — M9 multi-tenant complete; 545 PHPUnit + 157 Playwright E2E |
+| **NeNe Records** | [v0.4.0](https://github.com/hideyukiMORI/nene-records/releases) — M9 multi-tenant complete; 545 PHPUnit + 157 Playwright E2E · 60 MCP tools |
 
 ---
 
@@ -47,9 +64,9 @@ Real products, not demo endpoints. MIT · self-hosted · OpenAPI-first · MCP fo
 | **[NeNe Corpus](https://github.com/hideyukiMORI/nene-corpus)** | Knowledge chat with citations — PDF/CSV ingest, embed widget, Tier A ZIP | Phases 1–3 core ✅ | [Quick start](https://github.com/hideyukiMORI/nene-corpus#quick-start) · [nene-corpus.com](https://nene-corpus.com) |
 | **[NeNe Concierge](https://github.com/hideyukiMORI/nene-concierge)** | Visual chat scenarios — embed on product pages; actions (email / Slack / Chatwork) | Engine + admin + widget + 22 MCP tools ✅ | [`docker compose up --build`](https://github.com/hideyukiMORI/nene-concierge#quick-start) |
 
-**Records** — 545 backend tests · 157 Playwright E2E · superadmin / admin / editor · org-scoped JWT  
-**Corpus** — sync cited chat · 6-locale admin · analytics dashboard · shared-hosting path  
-**Concierge** — condition nodes · session analytics · scenario import/export · AI authoring via MCP
+**Records** — 545 backend tests · 157 Playwright E2E · superadmin / admin / editor · org-scoped JWT · 60 MCP tools  
+**Corpus** — sync cited chat · 6-locale admin · analytics dashboard · 357 Playwright E2E (157 admin + 200 persona) · shared-hosting path  
+**Concierge** — condition nodes · session analytics · scenario import/export · AI authoring via 38 MCP tools
 
 Optional upstream: Corpus and Concierge can read from Records over HTTP — repos stay separate.
 
@@ -106,10 +123,28 @@ Wire Cursor / Claude Desktop to your API: `composer require hideyukimori/nene-mc
 ## Why this stack
 
 - **AI-readable** — Handler → UseCase → Repository; agents and CI navigate without hidden magic
-- **MCP-native** — catalog-driven tools; Records 60+ · Concierge 22 · Vault 9 · Deal 7 read tools
+- **MCP-native** — catalog-driven tools; Records 60 · Concierge 38 · Vault 9 · Deal 7 read/write tools
 - **Multi-language parity** — PHP, Python, Node share OpenAPI-shaped boundaries
 - **Security-first** — RFC 9457 errors, JWT org isolation, PHPStan L8 / `mypy --strict` / Vitest
 - **Japan SMB path** — Tier A shared-hosting ZIP installers alongside Docker Compose (Tier B)
+
+---
+
+## Representative work
+
+Three repos that show the range — framework design, production-grade product, and cross-language parity.
+
+### [NENE2](https://github.com/hideyukiMORI/NENE2) — Framework design & API architecture
+PHP 8.4 micro-framework with 349 field trials, PHPStan level 8, and a full OpenAPI + MCP catalog.
+What to look at: [`docs/adr/`](https://github.com/hideyukiMORI/NENE2/tree/main/docs/adr) (why decisions were made) · [`src/`](https://github.com/hideyukiMORI/NENE2/tree/main/src) (clean HTTP / DI / middleware stack) · [`docs/howto/`](https://github.com/hideyukiMORI/NENE2/tree/main/docs/howto) (349 runnable patterns)
+
+### [NeNe Invoice](https://github.com/hideyukiMORI/nene-invoice) — Production product quality
+Self-hosted quote-to-cash with qualified-invoice PDF (日本適格請求書), multi-tenant JWT, Docker + shared-hosting dual path, and a completed external security audit.
+What to look at: [`docs/security/`](https://github.com/hideyukiMORI/nene-invoice/tree/main/docs/security) (pentest report + remediation) · [`docs/openapi/openapi.yaml`](https://github.com/hideyukiMORI/nene-invoice/blob/main/docs/openapi/openapi.yaml) · [`src/`](https://github.com/hideyukiMORI/nene-invoice/tree/main/src) (Handler → UseCase → Repository)
+
+### [nene2-python](https://github.com/hideyukiMORI/nene2-python) — Cross-language, type-safe, tested
+FastAPI port of the same architecture: `mypy --strict`, 466 tests (80%+ coverage), 282 field trials, 95 security reviews, UseCase/Repository separation with zero DB in domain tests.
+What to look at: [`src/nene2/`](https://github.com/hideyukiMORI/nene2-python/tree/main/src/nene2) (framework core) · [`tests/`](https://github.com/hideyukiMORI/nene2-python/tree/main/tests) (unit / HTTP / integration) · [`docs/field-trials/INDEX.md`](https://github.com/hideyukiMORI/nene2-python/blob/main/docs/field-trials/INDEX.md)
 
 ---
 
