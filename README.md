@@ -178,6 +178,6 @@ What to look at: [`src/nene2/`](https://github.com/hideyukiMORI/nene2-python/tre
 - NeNe renovation — [Zenn](https://zenn.dev/xioncc/articles/a2709df3e0de3b) · [source](https://github.com/hideyukiMORI/NeNe/blob/main/docs/articles/zenn-renovating-legacy-php-framework.md)
 - NeNe hands-on (fixed page + REST) — [Qiita](https://qiita.com/xioncc/items/bc18adedd8c5f5a84336) · [source](https://github.com/hideyukiMORI/NeNe/blob/main/docs/articles/qiita-fixed-page-and-rest-api.md)
 
-### English (planned / in flight)
+### English
 
-NENE2 OpenAPI + MCP wedge and sibling port articles: [publication-strategy schedule](https://github.com/hideyukiMORI/publication-strategy/blob/main/docs/schedules/2026-publication-schedule.md) (EXP-003 DEV, Jun 2026).
+- NENE2 / AI-readable APIs — [DEV Community](https://dev.to/hideyukimori/i-built-a-tiny-php-framework-for-ai-readable-business-apis-48eo) · [source](https://github.com/hideyukiMORI/NENE2/blob/main/docs/articles/dev-introducing-nene2-ai-readable-business-apis.md)
