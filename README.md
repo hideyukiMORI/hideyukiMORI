@@ -2,9 +2,9 @@
 
 **Convention-visible JSON APIs** for humans and AI agents — one design language across PHP, Python, and Node, plus self-hosted products you can ship on shared hosting or Docker.
 
-**Hub:** [nene2.dev](https://nene2.dev) · **Strategy:** [publication-strategy](https://github.com/hideyukiMORI/publication-strategy) · **Contact:** [ayane.co.jp](https://ayane.co.jp/)
+**Hub:** [nene2.dev](https://nene2.dev) · **Live demo:** [NeNe Invoice sandbox](https://invoice.ayane.co.jp/demo/kensetsu) · **Strategy:** [publication-strategy](https://github.com/hideyukiMORI/publication-strategy) · **Contact:** [ayane.co.jp](https://ayane.co.jp/)
 
-*Last updated: 2026-06-10 — profile README synced to public repo state.*
+*Last updated: 2026-07-09 — live demos, production SaaS, NENE2 v1.9.0.*
 
 ---
 
@@ -12,10 +12,12 @@
 
 | Category | Numbers |
 | --- | --- |
-| **Tests** | nene2-python **466** · NeNe Records **545 PHPUnit + 157 Playwright** · nene-corpus **357 Playwright** (157 admin + 200 persona) |
-| **Field trials** | NENE2 **349** · nene2-python **282** · nene2-node **187** |
-| **MCP tools** | Records **60** · Concierge **38** · Vault **9** |
-| **Security** | nene-invoice **pentest ✅** · nene-vault **CPA sign-off 🟢** · nene2-python **95 security reviews** |
+| **Live right now** | [NeNe Invoice demo](https://invoice.ayane.co.jp/demo/kensetsu) — disposable sandbox per click, no signup · [nene-records.com](https://nene-records.com) — multi-tenant SaaS in production |
+| **Scale** | **3,700+ merged PRs** across the fleet · 18 public repos |
+| **Tests** | NeNe Records **1,000+ PHPUnit + 220 Playwright** · nene2-python **466** · nene-corpus **357 Playwright** (157 admin + 200 persona) |
+| **Field trials** | NENE2 **352** · nene2-python **282** · nene2-node **187** |
+| **MCP tools** | Records **69** · Concierge **27** · Vault **9** |
+| **Security** | JWT **fail-closed by default, fleet-wide** (July 2026) · nene-invoice **pentest ✅** · nene-vault **tax-accountant sign-off 🟢** · nene2-python **95 security reviews** |
 | **Languages** | PHP 8.4 · Python 3.14 · TypeScript — same OpenAPI-shaped architecture |
 
 **If you want to go deeper:**
@@ -25,19 +27,16 @@
 
 ---
 
-## What shipped recently (June 2026)
+## What shipped recently (July 2026)
 
 | Area | Highlight |
 | --- | --- |
-| **NENE2** | [v1.5.329](https://github.com/hideyukiMORI/NENE2/releases) — 349 field trials covered; OpenAPI author + howto library |
-| **NeNe Invoice** | Phases 1–3 complete — quote-to-cash admin UI, qualified-invoice PDF, Tier A installer, Clear upstream `/api/*` |
-| **NeNe Vault** | Phases 0–4 complete — 電子帳簿保存法 archive, admin UI, Tier A ZIP, 9 MCP tools; compliance gate approved |
-| **NeNe Profile** | Normalization API + admin SPA + Playwright E2E — bank CSV → standard output for Clear |
-| **NeNe Clear** | Reconciliation + dunning API + admin UI; Invoice upstream contract wired |
-| **NeNe Concierge** | Scenario engine, admin SPA, embed widget, action engine (email / Slack / Chatwork), 38 MCP tools |
-| **NeNe Corpus** | Cited knowledge chat — ingest, embed widget, Tier A installer, 157 Playwright specs |
-| **NeNe Suite** | Phase 1 installer API + apex shell — multi-app orchestrator with professional sign-off on record |
-| **NeNe Records** | [v0.4.0](https://github.com/hideyukiMORI/nene-records/releases) — M9 multi-tenant complete; 545 PHPUnit + 157 Playwright E2E · 60 MCP tools |
+| **NeNe Records** | [v0.5.2](https://github.com/hideyukiMORI/nene-records/releases) — **production multi-tenant SaaS live at [nene-records.com](https://nene-records.com)** (subdomain per org, auto TLS) · shared-hosting installer ZIP · crawlable SSR/SEO · WordPress (WXR) import · runtime theme system |
+| **NeNe Invoice** | **[Live demo](https://invoice.ayane.co.jp/demo/kensetsu)** — disposable org per click, three industry templates · Phase 4: recurring billing, bank-deposit reconciliation workbench, provisioning multi-tenancy |
+| **NENE2** | [v1.9.0](https://github.com/hideyukiMORI/NENE2/releases) — `Nene2\Demo` disposable-demo module (capacity guard + throttle built in) · fail-closed JWT resolver adopted by every product · `Nene2\Install` toolkit |
+| **NeNe Clear** | Reconciliation + dunning complete (two pentest rounds) · hosted demo environment shipped |
+| **NeNe Vault** | Phases 0–4 complete — 電子帳簿保存法 archive, Tier A ZIP; tax-accountant sign-off on record |
+| **Fleet** | GitHub Actions CI + conformance linting rolled out across products · README status now synced to reality by convention |
 
 ---
 
@@ -48,7 +47,7 @@ Same architecture · OpenAPI contract · RFC 9457 Problem Details · MCP-ready b
 | Runtime | Stack | Latest | Start |
 | --- | --- | --- | --- |
 | **[NeNe](https://github.com/hideyukiMORI/NeNe)** | PHP 8.4 · Smarty · URL routing · renovation story | [v0.3.0](https://github.com/hideyukiMORI/NeNe/releases) | [Demo](https://nene-php.com/) · `composer require` |
-| **[NENE2](https://github.com/hideyukiMORI/NENE2)** | PHP 8.4 · OpenAPI author · MCP catalog · howto library | [v1.5.329](https://github.com/hideyukiMORI/NENE2/releases) | `composer require hideyukimori/nene2` |
+| **[NENE2](https://github.com/hideyukiMORI/NENE2)** | PHP 8.4 · OpenAPI author · MCP catalog · howto library | [v1.9.0](https://github.com/hideyukiMORI/NENE2/releases) | `composer require hideyukimori/nene2` |
 | **[nene2-python](https://github.com/hideyukiMORI/nene2-python)** | FastAPI · mypy strict · Pydantic v2 | [v1.8.164](https://github.com/hideyukiMORI/nene2-python/releases) | `uv add nene2-python` |
 | **[nene2-node](https://github.com/hideyukiMORI/nene2-node)** | Hono · TypeScript strict | [v0.3.0](https://github.com/hideyukiMORI/nene2-node/releases) | `npm i @hideyukimori/nene2-framework` |
 
@@ -60,13 +59,13 @@ Real products, not demo endpoints. MIT · self-hosted · OpenAPI-first · MCP fo
 
 | Product | One line | Status | Try it |
 | --- | --- | --- | --- |
-| **[NeNe Records](https://github.com/hideyukiMORI/nene-records)** | Headless CMS — typed entities, React admin, 60+ MCP tools, multi-tenant JWT | M9 complete · [v0.4.0](https://github.com/hideyukiMORI/nene-records/releases) | [`docker compose up --build`](https://github.com/hideyukiMORI/nene-records#quick-start) |
-| **[NeNe Corpus](https://github.com/hideyukiMORI/nene-corpus)** | Knowledge chat with citations — PDF/CSV ingest, embed widget, Tier A ZIP | Phases 1–3 core ✅ | [Quick start](https://github.com/hideyukiMORI/nene-corpus#quick-start) · [nene-corpus.com](https://nene-corpus.com) |
-| **[NeNe Concierge](https://github.com/hideyukiMORI/nene-concierge)** | Visual chat scenarios — embed on product pages; actions (email / Slack / Chatwork) | Engine + admin + widget + 22 MCP tools ✅ | [`docker compose up --build`](https://github.com/hideyukiMORI/nene-concierge#quick-start) |
+| **[NeNe Records](https://github.com/hideyukiMORI/nene-records)** | Headless CMS — typed entities, React admin, 69 MCP tools, multi-tenant JWT | **Production SaaS** · [v0.5.2](https://github.com/hideyukiMORI/nene-records/releases) | [nene-records.com](https://nene-records.com) — sign up, get `your-slug.nene-records.com` |
+| **[NeNe Corpus](https://github.com/hideyukiMORI/nene-corpus)** | Knowledge chat with citations — PDF/CSV ingest, embed widget, Tier A ZIP | Phases 1–4 ✅ (multi-tenant) | [Quick start](https://github.com/hideyukiMORI/nene-corpus#quick-start) · [nene-corpus.com](https://nene-corpus.com) |
+| **[NeNe Concierge](https://github.com/hideyukiMORI/nene-concierge)** | Visual chat scenarios — embed on product pages; actions (email / Slack / Chatwork) | Engine + admin + widget + 27 MCP tools ✅ | [`docker compose up --build`](https://github.com/hideyukiMORI/nene-concierge#quick-start) |
 
-**Records** — 545 backend tests · 157 Playwright E2E · superadmin / admin / editor · org-scoped JWT · 60 MCP tools  
+**Records** — 1,000+ backend tests · 220 Playwright E2E · SSR/SEO + OG images + sitemap · WordPress (WXR) import · runtime themes · 69 MCP tools  
 **Corpus** — sync cited chat · 6-locale admin · analytics dashboard · 357 Playwright E2E (157 admin + 200 persona) · shared-hosting path  
-**Concierge** — condition nodes · session analytics · scenario import/export · AI authoring via 38 MCP tools
+**Concierge** — condition nodes · session analytics · scenario import/export · AI authoring via 27 MCP tools
 
 Optional upstream: Corpus and Concierge can read from Records over HTTP — repos stay separate.
 
@@ -86,11 +85,11 @@ NeNe Profile          NeNe Invoice          NeNe Clear           NeNe Vault
 
 | Product | Domain | Status | Repo |
 | --- | --- | --- | --- |
-| **[NeNe Invoice](https://github.com/hideyukiMORI/nene-invoice)** | 見積・請求・入金 — 適格請求書 PDF, multi-tenant admin | Phases 1–3 ✅ · security review ✅ | [Quick start](https://github.com/hideyukiMORI/nene-invoice#quick-start) |
-| **[NeNe Clear](https://github.com/hideyukiMORI/nene-clear)** | 入金消込・督促 — consumes Invoice `/api/*`, not a billing app | Phase 1–2 ✅ · pentest remediated | [README](https://github.com/hideyukiMORI/nene-clear) |
+| **[NeNe Invoice](https://github.com/hideyukiMORI/nene-invoice)** | 見積・請求・入金 — 適格請求書 PDF, multi-tenant admin | Phases 1–3 ✅ · Phase 4 in progress · security review ✅ | **[Live demo](https://invoice.ayane.co.jp/demo/kensetsu)** · [Quick start](https://github.com/hideyukiMORI/nene-invoice#quick-start) |
+| **[NeNe Clear](https://github.com/hideyukiMORI/nene-clear)** | 入金消込・督促 — consumes Invoice `/api/*`, not a billing app | Phase 1–2 ✅ · pentest remediated · hosted demo | [README](https://github.com/hideyukiMORI/nene-clear) |
 | **[NeNe Profile](https://github.com/hideyukiMORI/nene-profile)** | Bank CSV column mapping → standard transaction export | Phase 1–2 ✅ | [README](https://github.com/hideyukiMORI/nene-profile) |
-| **[NeNe Vault](https://github.com/hideyukiMORI/nene-vault)** | Received-document archive — search, retention, audit | Phases 0–4 ✅ · CPA sign-off 🟢 | [`docker compose up`](https://github.com/hideyukiMORI/nene-vault) → `:8600` |
-| **[NeNe Deal](https://github.com/hideyukiMORI/nene-deal)** | Ultra-light B2B pipeline — kanban, forecast, won → Invoice handoff | MVP backend + admin ✅ | [README](https://github.com/hideyukiMORI/nene-deal) |
+| **[NeNe Vault](https://github.com/hideyukiMORI/nene-vault)** | Received-document archive — search, retention, audit | Phases 0–4 ✅ · tax-accountant sign-off 🟢 | [`docker compose up`](https://github.com/hideyukiMORI/nene-vault) → `:8600` |
+| **[NeNe Deal](https://github.com/hideyukiMORI/nene-deal)** | Ultra-light B2B pipeline — kanban, forecast, won → Invoice handoff | MVP + polish ✅ · CI | [README](https://github.com/hideyukiMORI/nene-deal) |
 
 **Not one monolith.** Invoice issues bills; Clear clears deposits; Profile normalizes CSV; Vault archives received PDFs. See each repo's ADR 0009 boundary docs.
 
@@ -123,9 +122,9 @@ Wire Cursor / Claude Desktop to your API: `composer require hideyukimori/nene-mc
 ## Why this stack
 
 - **AI-readable** — Handler → UseCase → Repository; agents and CI navigate without hidden magic
-- **MCP-native** — catalog-driven tools; Records 60 · Concierge 38 · Vault 9 · Deal 7 read/write tools
+- **MCP-native** — catalog-driven tools; Records 69 · Concierge 27 · Vault 9 · Deal read tools
 - **Multi-language parity** — PHP, Python, Node share OpenAPI-shaped boundaries
-- **Security-first** — RFC 9457 errors, JWT org isolation, PHPStan L8 / `mypy --strict` / Vitest
+- **Security-first** — RFC 9457 errors, JWT org isolation **fail-closed by default**, PHPStan L8 / `mypy --strict` / Vitest
 - **Japan SMB path** — Tier A shared-hosting ZIP installers alongside Docker Compose (Tier B)
 
 ---
@@ -135,11 +134,11 @@ Wire Cursor / Claude Desktop to your API: `composer require hideyukimori/nene-mc
 Three repos that show the range — framework design, production-grade product, and cross-language parity.
 
 ### [NENE2](https://github.com/hideyukiMORI/NENE2) — Framework design & API architecture
-PHP 8.4 micro-framework with 349 field trials, PHPStan level 8, and a full OpenAPI + MCP catalog.
-What to look at: [`docs/adr/`](https://github.com/hideyukiMORI/NENE2/tree/main/docs/adr) (why decisions were made) · [`src/`](https://github.com/hideyukiMORI/NENE2/tree/main/src) (clean HTTP / DI / middleware stack) · [`docs/howto/`](https://github.com/hideyukiMORI/NENE2/tree/main/docs/howto) (349 runnable patterns)
+PHP 8.4 micro-framework with 352 field trials, PHPStan level 8, and a full OpenAPI + MCP catalog.
+What to look at: [`docs/adr/`](https://github.com/hideyukiMORI/NENE2/tree/main/docs/adr) (why decisions were made) · [`src/`](https://github.com/hideyukiMORI/NENE2/tree/main/src) (clean HTTP / DI / middleware stack) · [`docs/howto/`](https://github.com/hideyukiMORI/NENE2/tree/main/docs/howto) (262 task-focused guides)
 
 ### [NeNe Invoice](https://github.com/hideyukiMORI/nene-invoice) — Production product quality
-Self-hosted quote-to-cash with qualified-invoice PDF (日本適格請求書), multi-tenant JWT, Docker + shared-hosting dual path, and a completed external security audit.
+Self-hosted quote-to-cash with qualified-invoice PDF (日本適格請求書), multi-tenant JWT, Docker + shared-hosting dual path, and a completed external security audit. **[Try the live demo](https://invoice.ayane.co.jp/demo/kensetsu)** — every click provisions a fresh disposable environment.
 What to look at: [`docs/security/`](https://github.com/hideyukiMORI/nene-invoice/tree/main/docs/security) (pentest report + remediation) · [`docs/openapi/openapi.yaml`](https://github.com/hideyukiMORI/nene-invoice/blob/main/docs/openapi/openapi.yaml) · [`src/`](https://github.com/hideyukiMORI/nene-invoice/tree/main/src) (Handler → UseCase → Repository)
 
 ### [nene2-python](https://github.com/hideyukiMORI/nene2-python) — Cross-language, type-safe, tested
@@ -152,6 +151,8 @@ What to look at: [`src/nene2/`](https://github.com/hideyukiMORI/nene2-python/tre
 
 | You want… | Go to |
 | --- | --- |
+| **Touch a live product in 30 seconds** | [Invoice demo sandbox](https://invoice.ayane.co.jp/demo/kensetsu) — no signup, auto-deletes |
+| A production SaaS built on this stack | [nene-records.com](https://nene-records.com) |
 | Old-school PHP MVC + renovation story | [NeNe](https://github.com/hideyukiMORI/NeNe) |
 | New JSON API in PHP | [NENE2](https://github.com/hideyukiMORI/NENE2) |
 | Same architecture in Python / Node | [nene2-python](https://github.com/hideyukiMORI/nene2-python) · [nene2-node](https://github.com/hideyukiMORI/nene2-node) |
@@ -181,3 +182,5 @@ What to look at: [`src/nene2/`](https://github.com/hideyukiMORI/nene2-python/tre
 ### English
 
 - NENE2 / AI-readable APIs — [DEV Community](https://dev.to/hideyukimori/i-built-a-tiny-php-framework-for-ai-readable-business-apis-48eo) · [source](https://github.com/hideyukiMORI/NENE2/blob/main/docs/articles/dev-introducing-nene2-ai-readable-business-apis.md)
+- MCP safety boundary — [DEV Community](https://dev.to/hideyukimori/mcp-should-not-mean-letting-ai-touch-your-database-57p1) · [source](https://github.com/hideyukiMORI/NENE2/blob/main/docs/articles/dev-mcp-should-not-mean-letting-ai-touch-your-database.md)
+- NeNe OSS series overview — [DEV Community](https://dev.to/hideyukimori/i-am-building-self-hosted-business-tools-for-small-teams-in-japan-4i26) · [source](https://github.com/hideyukiMORI/NENE2/blob/main/docs/articles/dev-building-self-hosted-business-tools-for-japan.md)
