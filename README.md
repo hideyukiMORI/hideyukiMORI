@@ -1,18 +1,12 @@
-<!--
-  HERO IMAGE SLOT (pending — ClaudeDesign via hub, AYANE "ENGINEERED/工" tokens: 墨/生成/朱).
-  Target 1280×640, premium/quiet tone, light+dark. When delivered, drop the <picture> below
-  in place of this comment:
-
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="assets/hero-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.png">
-    <img alt="Hideyuki Mori — bank-grade engineering at a fair, transparent price" src="assets/hero-light.png" width="100%">
-  </picture>
--->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/hero-dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.webp">
+  <img alt="Hideyuki Mori — Mission-critical engineering, at a fair and transparent price" src="assets/hero-light.webp" width="100%">
+</picture>
 
 # Hideyuki Mori
 
-### Bank-grade engineering, at a fair and transparent price.
+### Mission-critical engineering, at a fair and transparent price.
 
 A full-stack engineer (25 years JavaScript · 20 years PHP) shipping a whole fleet of **self-hosted business tools** — one design language across PHP, Python, and Node, with **convention-visible JSON APIs** built for humans and AI agents alike. Built solo, with AI-driven development, held to the quality bar of enterprise core systems.
 
@@ -56,8 +50,6 @@ Not demo endpoints — real products you can put your hands on.
   &nbsp;
   <a href="https://nene-records.com"><img alt="NeNe Records — admin dashboard (production multi-tenant SaaS)" src="assets/nene-records-admin.webp" width="49%"></a>
 </p>
-
-<!-- Hero banner: pending ClaudeDesign (ENGINEERED/工). -->
 
 | | |
 | --- | --- |
