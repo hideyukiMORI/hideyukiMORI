@@ -52,12 +52,12 @@ The point of the fleet is not "look how much I built." It's the reason a small t
 Not demo endpoints — real products you can put your hands on.
 
 <p align="center">
-  <a href="https://invoice.ayane.co.jp/demo/kensetsu">
-    <img alt="NeNe Invoice — live dashboard (real UI from the disposable demo)" src="assets/nene-invoice-dashboard.webp" width="100%">
-  </a>
+  <a href="https://invoice.ayane.co.jp/demo/kensetsu"><img alt="NeNe Invoice — live dashboard (real UI from the disposable demo)" src="assets/nene-invoice-dashboard.webp" width="49%"></a>
+  &nbsp;
+  <a href="https://nene-records.com"><img alt="NeNe Records — admin dashboard (production multi-tenant SaaS)" src="assets/nene-records-admin.webp" width="49%"></a>
 </p>
 
-<!-- nene-records.com admin shot: pending a fresh capture. Hero banner: pending ClaudeDesign (ENGINEERED/工). -->
+<!-- Hero banner: pending ClaudeDesign (ENGINEERED/工). -->
 
 | | |
 | --- | --- |
