@@ -29,6 +29,7 @@ Numbers below are **measured, not claimed** — each links to where you can chec
 | **Live right now** | [Invoice demo](https://invoice.ayane.co.jp/demo/kensetsu) — a fresh disposable org per click · [nene-records.com](https://nene-records.com) — multi-tenant SaaS in production |
 | **Scale** | **5,000+ merged PRs** across my own fleet · **32 public repos** ([verify](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AhideyukiMORI+owner%3AhideyukiMORI&type=pullrequests)) |
 | **Quality gates** | **PHPStan level 8** · `mypy --strict` · fleet-wide conformance linting · **JWT fail-closed by default** |
+| **MCP** | **100+ MCP tools across the fleet** — catalog-driven, typed boundaries (agents get tools, not raw DB access) |
 | **Test quality** | NeNe Records — **1,256 PHPUnit + 220 Playwright E2E** (measured, not self-reported) |
 | **Languages** | PHP 8.4 · Python 3.14 · TypeScript — one OpenAPI-shaped architecture |
 
@@ -114,7 +115,7 @@ NeNe Profile          NeNe Invoice          NeNe Clear           NeNe Vault
 | --- | --- | --- |
 | **[NeNe Invoice](https://github.com/hideyukiMORI/nene-invoice)** | 見積・請求・入金 — 適格請求書 PDF, multi-tenant admin | Phases 1–3 ✅ · Phase 4 in progress · **[live demo](https://invoice.ayane.co.jp/demo/kensetsu)** |
 | **[NeNe Clear](https://github.com/hideyukiMORI/nene-clear)** | 入金消込・督促 — consumes Invoice `/api/*`, not a billing app | Phases 1–2 ✅ · hosted demo |
-| **[NeNe Vault](https://github.com/hideyukiMORI/nene-vault)** | 受領文書アーカイブ — search, retention, audit (電子帳簿保存法), 9 MCP tools | Phases 0–4 ✅ · `docker compose up` → `:8600` |
+| **[NeNe Vault](https://github.com/hideyukiMORI/nene-vault)** | 受領文書アーカイブ — search, retention, audit (電子帳簿保存法) | Phases 0–4 ✅ · `docker compose up` → `:8600` |
 | **[NeNe Profile](https://github.com/hideyukiMORI/nene-profile)** | Bank-CSV column mapping → standard transaction export | Phases 1–2 ✅ |
 | **[NeNe Deal](https://github.com/hideyukiMORI/nene-deal)** | Ultra-light B2B pipeline — kanban, forecast, won → Invoice handoff | MVP + polish ✅ · CI |
 
