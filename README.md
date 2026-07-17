@@ -91,7 +91,7 @@ Real products — MIT · self-hosted · OpenAPI-first · MCP for ops. Install wh
 
 | Product | One line | Status |
 | --- | --- | --- |
-| **[NeNe Records](https://github.com/hideyukiMORI/nene-records)** | Headless CMS — typed entities, React admin, **70 MCP tools**, multi-tenant JWT | **Production SaaS** · [v0.5.2](https://github.com/hideyukiMORI/nene-records/releases) · [nene-records.com](https://nene-records.com) |
+| **[NeNe Records](https://github.com/hideyukiMORI/nene-records)** | Headless CMS — typed entities, React admin, **70 MCP tools**, multi-tenant JWT | **Production SaaS** · [v0.5.3](https://github.com/hideyukiMORI/nene-records/releases) · [nene-records.com](https://nene-records.com) |
 | **[NeNe Corpus](https://github.com/hideyukiMORI/nene-corpus)** | Knowledge chat with citations — PDF/CSV ingest, embed widget, shared-hosting ZIP | Phases 1–4 ✅ · [nene-corpus.com](https://nene-corpus.com) |
 | **[NeNe Concierge](https://github.com/hideyukiMORI/nene-concierge)** | Visual chat scenarios — embed on product pages; actions (email / Slack / Chatwork) | Engine + admin + widget + **27 MCP tools** ✅ |
 
