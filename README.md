@@ -192,14 +192,29 @@ Look at: [`src/nene2/`](https://github.com/hideyukiMORI/nene2-python/tree/main/s
 
 ## Articles
 
-**English**
+I write regularly across three platforms — [DEV](https://dev.to/hideyukimori) · [Zenn](https://zenn.dev/xioncc) · [Qiita](https://qiita.com/xioncc).
+
+**Featured**
+
+*English*
 - [I built a tiny PHP framework for AI-readable business APIs](https://dev.to/hideyukimori/i-built-a-tiny-php-framework-for-ai-readable-business-apis-48eo) — DEV
 - [MCP should not mean letting AI touch your database](https://dev.to/hideyukimori/mcp-should-not-mean-letting-ai-touch-your-database-57p1) — DEV
 - [Self-hosted business tools for small teams in Japan](https://dev.to/hideyukimori/i-am-building-self-hosted-business-tools-for-small-teams-in-japan-4i26) — DEV
 
-**日本語**
+*日本語*
 - [レガシー PHP フレームワークの改修（NeNe）](https://zenn.dev/xioncc/articles/a2709df3e0de3b) — Zenn
 - [固定ページ + REST API のハンズオン（NeNe）](https://qiita.com/xioncc/items/bc18adedd8c5f5a84336) — Qiita
+
+**Latest** <!-- auto-updated daily from the nene-articles pipeline · do NOT hand-edit between the markers below -->
+<!-- ARTICLES:START -->
+- [共有レンタルサーバーで「作成1秒のorg」が即消える（JST/UTC sweep 障害）](https://qiita.com/xioncc/items/0ab20929edf416940514) — Qiita · 日本語
+- [A todo.txt shared by a human and AI agents](https://dev.to/hideyukimori/a-todotxt-shared-by-a-human-and-ai-agents-why-plain-text-beat-a-saas-board-for-my-workflow-5dbh) — DEV · English
+- [curl では全緑、実ブラウザで 6 機能が 401 停止](https://qiita.com/xioncc/items/f639a517781b1dcdd9be) — Qiita · 日本語
+- [本番でだけ 401 になる生 fetch を ESLint で禁止する](https://zenn.dev/xioncc/articles/579c732cd562a3) — Zenn · 日本語
+- [ブラウザに素の JSON を返さない（エラーの content negotiation）](https://zenn.dev/xioncc/articles/91e9697171a6b0) — Zenn · 日本語
+<!-- ARTICLES:END -->
+
+<sub>Featured = hand-picked · Latest = newest 5, refreshed daily (max 2 per platform).</sub>
 
 ---
 
