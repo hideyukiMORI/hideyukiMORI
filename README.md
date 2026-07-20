@@ -207,11 +207,11 @@ I write regularly across three platforms — [DEV](https://dev.to/hideyukimori) 
 
 **Latest** <!-- auto-updated daily from the nene-articles pipeline · do NOT hand-edit between the markers below -->
 <!-- ARTICLES:START -->
-- [共有レンタルサーバーで「作成1秒のorg」が即消える（JST/UTC sweep 障害）](https://qiita.com/xioncc/items/0ab20929edf416940514) — Qiita · 日本語
-- [A todo.txt shared by a human and AI agents](https://dev.to/hideyukimori/a-todotxt-shared-by-a-human-and-ai-agents-why-plain-text-beat-a-saas-board-for-my-workflow-5dbh) — DEV · English
-- [curl では全緑、実ブラウザで 6 機能が 401 停止](https://qiita.com/xioncc/items/f639a517781b1dcdd9be) — Qiita · 日本語
-- [本番でだけ 401 になる生 fetch を ESLint で禁止する](https://zenn.dev/xioncc/articles/579c732cd562a3) — Zenn · 日本語
-- [ブラウザに素の JSON を返さない（エラーの content negotiation）](https://zenn.dev/xioncc/articles/91e9697171a6b0) — Zenn · 日本語
+- [テストが全部緑でも壊せる｜リリース前アドバーサリアルレビューを常設する](https://zenn.dev/xioncc/articles/349a739826288b) — Zenn (ja) · 2026-07-20
+- [CSV formula injection をフリートから一掃する｜PHP 型ベースで中和する](https://qiita.com/xioncc/items/59dfdde489bd23d1972c) — Qiita (ja) · 2026-07-20
+- [コンテキストが溢れる AI 協働を multi-session で回す｜指揮×担当を指示書と報告書で受け渡す](https://zenn.dev/xioncc/articles/4445ac86600d28) — Zenn (ja) · 2026-07-19
+- [共有レンタルサーバーの罠【随時更新】｜症状→原因→対策の索引](https://qiita.com/xioncc/items/38dc71a8cc8220964f0f) — Qiita (ja) · 2026-07-19
+- [A todo.txt shared by a human and AI agents: why plain text beat a SaaS board for my workflow](https://dev.to/hideyukimori/a-todotxt-shared-by-a-human-and-ai-agents-why-plain-text-beat-a-saas-board-for-my-workflow-5dbh) — DEV (en) · 2026-07-17
 <!-- ARTICLES:END -->
 
 <sub>Featured = hand-picked · Latest = newest 5, refreshed daily (max 2 per platform).</sub>
