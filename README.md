@@ -207,11 +207,11 @@ I write regularly across three platforms — [DEV](https://dev.to/hideyukimori) 
 
 **Latest** <!-- auto-updated daily from the nene-articles pipeline · do NOT hand-edit between the markers below -->
 <!-- ARTICLES:START -->
-- [テストが全部緑でも壊せる｜リリース前アドバーサリアルレビューを常設する](https://zenn.dev/xioncc/articles/349a739826288b) — Zenn (ja) · 2026-07-20
-- [CSV formula injection をフリートから一掃する｜PHP 型ベースで中和する](https://qiita.com/xioncc/items/59dfdde489bd23d1972c) — Qiita (ja) · 2026-07-20
-- [コンテキストが溢れる AI 協働を multi-session で回す｜指揮×担当を指示書と報告書で受け渡す](https://zenn.dev/xioncc/articles/4445ac86600d28) — Zenn (ja) · 2026-07-19
-- [共有レンタルサーバーの罠【随時更新】｜症状→原因→対策の索引](https://qiita.com/xioncc/items/38dc71a8cc8220964f0f) — Qiita (ja) · 2026-07-19
-- [A todo.txt shared by a human and AI agents: why plain text beat a SaaS board for my workflow](https://dev.to/hideyukimori/a-todotxt-shared-by-a-human-and-ai-agents-why-plain-text-beat-a-saas-board-for-my-workflow-5dbh) — DEV (en) · 2026-07-17
+- [Two AI Agents Shared a Todo File and a Line Vanished](https://dev.to/hideyukimori/two-ai-agents-shared-a-todo-file-and-a-line-vanished-22jd) — DEV (en) · 2026-08-08
+- [適用ゼロで codemod の非冪等バグを見つけた──撃つ前の机上 dry-run](https://zenn.dev/xioncc/articles/codemod-desk-check-idempotence) — Zenn (ja) · 2026-08-07
+- [target="_blank"がハイドレーション後だけ消える｜SSR/SPA二重sanitizerの罠](https://qiita.com/xioncc/items/32c9220145e116263023) — Qiita (ja) · 2026-08-06
+- [AI への作業指示書は4日で腐る──着手前の再実測が空撃ちを防いだ](https://zenn.dev/xioncc/articles/stale-orders-subordinate-verifies) — Zenn (ja) · 2026-08-05
+- [緑の PR を 11 秒差でマージしたら main が赤になった話｜PR CI は統合後の main を検証しない](https://qiita.com/xioncc/items/d26f17c566a6139f4aff) — Qiita (ja) · 2026-08-05
 <!-- ARTICLES:END -->
 
 <sub>Featured = hand-picked · Latest = newest 5, refreshed daily (max 2 per platform).</sub>
