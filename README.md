@@ -25,7 +25,7 @@ Numbers are **measured, not claimed** — each links to where you can check it y
 | **Quality gates** | **PHPStan level 8** · `mypy --strict` · fleet-wide conformance linting · dependency audit in CI · **JWT fail-closed by default** |
 | **Tests** | NeNe Records: **1,662 PHPUnit tests + 220 Playwright E2E** (`phpunit --list-tests`) · NeNe Invoice: 840 PHPUnit test methods |
 | **MCP** | **140+ MCP tools across 8 product catalogs** — catalog-driven, typed boundaries (agents get tools, not raw DB access) |
-| **Languages** | PHP 8.4 · Python 3.14 · TypeScript · Go — plus Rust, Java, Kotlin, and C# in [constraint-system experiments](#same-discipline-other-ecosystems) |
+| **Languages** | PHP 8.4 · Python 3.14 · TypeScript · Go — plus Rust, Java, Kotlin, C#, and C++ in [constraint-system experiments](#same-discipline-other-ecosystems) |
 
 ---
 
@@ -184,6 +184,7 @@ The fleet above is PHP / Python / TypeScript. These repos take one idea from it 
 | **[nene-clock](https://github.com/hideyukiMORI/nene-clock)** | Java 21 · Swing | A small desktop clock whose point is the constraint system around it |
 | **[NENE-PIXEL](https://github.com/hideyukiMORI/NENE-PIXEL)** | Kotlin · Android | Pixel drawing tool with an architecture constitution and command model |
 | **[NeNeCommander](https://github.com/hideyukiMORI/NeNeCommander)** | C# · .NET 10 · WinUI 3 | Keyboard-first dual-pane file manager; typed Windows / UNC / WSL paths, fail-closed file operations |
+| **[nene-loupe](https://github.com/hideyukiMORI/nene-loupe)** | C++23 · plain Win32 | Frameless 8× screen loupe and colour picker; the first of these with a shipped [portable release](https://github.com/hideyukiMORI/nene-loupe/releases) (v0.2.0, ZIP + SHA256SUMS) — and a written list of what C++ could not be made to refuse |
 
 Each one starts from a project charter, an architecture constitution, and a test strategy before the first feature — the documents are in the repos.
 
