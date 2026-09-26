@@ -61,7 +61,7 @@ Same architecture · OpenAPI contract · RFC 9457 Problem Details · MCP-ready b
 
 | Runtime | Stack | Latest | Start |
 | --- | --- | --- | --- |
-| **[NENE2](https://github.com/hideyukiMORI/NENE2)** | PHP 8.4 · OpenAPI author · MCP catalog · 264 howto guides | **v1.10.0** (release) / **v1.11.0** (Composer) | `composer require hideyukimori/nene2` |
+| **[NENE2](https://github.com/hideyukiMORI/NENE2)** | PHP 8.4 · OpenAPI author · MCP catalog · 264 howto guides | [v1.12.0](https://github.com/hideyukiMORI/NENE2/releases) | `composer require hideyukimori/nene2` |
 | **[nene2-python](https://github.com/hideyukiMORI/nene2-python)** | FastAPI · `mypy --strict` · Pydantic v2 · 282 field trials | [v1.8.164](https://github.com/hideyukiMORI/nene2-python/releases) | `uv add nene2-python` |
 | **[nene2-node](https://github.com/hideyukiMORI/nene2-node)** | Hono · TypeScript strict | [v0.3.0](https://github.com/hideyukiMORI/nene2-node/releases) | `npm i @hideyukimori/nene2-framework` |
 | **[NeNe](https://github.com/hideyukiMORI/NeNe)** | PHP 8.4 · Smarty · a legacy framework renovated in the open | [v0.3.0](https://github.com/hideyukiMORI/NeNe/releases) | [Demo](https://nene-php.com/) · `composer require` |
