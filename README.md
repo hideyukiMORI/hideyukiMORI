@@ -36,7 +36,7 @@ Every feature is one numbered requirement in [`SPECIFICATION.md`](https://github
 
 ## More Windows apps
 
-Small tools I use every day. No UI library, no runtime to install. Snapshot: October 2026.
+Small, single-purpose tools. No UI library, no runtime to install. Snapshot: October 2026.
 
 <p align="center">
   <a href="https://apps.microsoft.com/detail/9N6HZB1SXKBM"><img alt="NeNe Loupe — a magnified grid of screen pixels with the centre pixel outlined, and its colour shown as #33E699" src="assets/nene-loupe.webp" width="49%"></a>
