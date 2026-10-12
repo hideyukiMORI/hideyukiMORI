@@ -32,7 +32,7 @@ One executable. C++23, plain Win32, Direct2D and DirectWrite — no UI library, 
 
 <sub>Real windows, captured from a development build at the default font and size — <a href="https://github.com/hideyukiMORI/nene-nib/blob/main/docs/quality/showcase-2026-10-12.md">capture details</a>.</sub>
 
-### Find your theme
+### Colour themes
 
 <p align="center">
   <a href="https://github.com/hideyukiMORI/nene-nib#find-your-theme"><img alt="Eight NeNe Nib theme colour samples: alloy-core, code-rain, monalisa and red for dark backgrounds; rose-pine-dawn, everforest-light, gruvbox-light and github-light for light backgrounds" src="assets/nib-theme-gallery.svg" width="100%"></a>
