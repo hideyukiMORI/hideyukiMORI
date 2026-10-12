@@ -18,7 +18,19 @@ These days most of my open-source time goes into **native Windows applications**
 
 **[github.com/hideyukiMORI/nene-nib](https://github.com/hideyukiMORI/nene-nib)** · Windows 11 x64 · **Beta — [download v0.1.0-beta.2](https://github.com/hideyukiMORI/nene-nib/releases/tag/v0.1.0-beta.2)** (a 0.6 MB ZIP with `SHA256SUMS`; extract and run `NeNeNib.exe`, no installer and no runtime)
 
+<p align="center">
+  <a href="https://github.com/hideyukiMORI/nene-nib"><img alt="NeNe Nib showing its own README in Vim NORMAL mode, with two tabs in the title bar and the ordinary / Vim switch in the status bar" src="assets/nib-vim.webp" width="100%"></a>
+</p>
+
 One executable. C++23, plain Win32, Direct2D and DirectWrite — no UI library, no runtime dependency. It edits like Notepad until you flip one switch in the status bar; then it is Vim.
+
+<p align="center">
+  <img alt="NeNe Nib with Ctrl+P open, listing open tabs, bookmarks, recently closed files and files in the same folder" src="assets/nib-palette.webp" width="49%">
+  &nbsp;
+  <img alt="NeNe Nib in ordinary editing mode with a light theme, wrapping Japanese text" src="assets/nib-light.webp" width="49%">
+</p>
+
+<sub>Real windows, captured from a development build at the default font and size — <a href="https://github.com/hideyukiMORI/nene-nib/blob/main/docs/quality/showcase-2026-10-12.md">capture details</a>.</sub>
 
 | | |
 | --- | --- |
