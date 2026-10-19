@@ -8,9 +8,9 @@
 
 ### Software engineer. I build small Windows desktop tools and self-hosted business software in the open, and I put the proof next to every claim.
 
-These days most of my open-source time goes into **native Windows applications** — small, frameless, single-purpose tools written without a UI library. The one I am working on hardest right now is **[NeNe Nib](#nene-nib--a-fast-text-editor-that-toggles-between-ordinary-and-vim-editing)**, a text editor. NeNe Loupe is on the Microsoft Store, and NeNe Clock and NeNe Ruler are awaiting Store certification. Alongside them I maintain the **NENE2 series** of self-hosted business software. Everything below is public and checkable: the code, the tests, the releases, and the architecture decisions.
+These days most of my open-source time goes into **native Windows applications** — small, frameless, single-purpose tools written without a UI library. The one I am working on hardest right now is **[NeNe Nib](#nene-nib--a-fast-text-editor-that-toggles-between-ordinary-and-vim-editing)**, a text editor. NeNe Loupe, NeNe Clock and NeNe Ruler are on the Microsoft Store. Alongside them I maintain the **NENE2 series** of self-hosted business software. Everything below is public and checkable: the code, the tests, the releases, and the architecture decisions.
 
-<sub>日本語: ソフトウェアエンジニア。いまは Windows 向けの小さなネイティブアプリ（UI ライブラリを使わない、枠なし・単機能の道具）を中心に公開開発しています。いちばん力を入れているのはテキストエディタ「NeNe Nib」です。NeNe Loupe は Microsoft Store で公開中、NeNe Clock と NeNe Ruler は 2026-10-18 に申請して認定待ちです。あわせて、自己ホスト型業務ツール群「NENE2 シリーズ」を保守しています。このページの数字はすべてリンク先で確かめられます。</sub>
+<sub>日本語: ソフトウェアエンジニア。いまは Windows 向けの小さなネイティブアプリ（UI ライブラリを使わない、枠なし・単機能の道具）を中心に公開開発しています。いちばん力を入れているのはテキストエディタ「NeNe Nib」です。NeNe Loupe・NeNe Clock・NeNe Ruler は Microsoft Store で公開中です。あわせて、自己ホスト型業務ツール群「NENE2 シリーズ」を保守しています。このページの数字はすべてリンク先で確かめられます。</sub>
 
 ---
 
@@ -58,7 +58,7 @@ Every feature is one numbered requirement in [`SPECIFICATION.md`](https://github
 
 ## More Windows apps
 
-Small, single-purpose tools. No UI library, no runtime to install. Snapshot: 18 October 2026 — **NeNe Clock and NeNe Ruler 1.0.0 were submitted to the Microsoft Store on that day and are awaiting certification.**
+Small, single-purpose tools. No UI library, no runtime to install. Snapshot: 19 October 2026 — **NeNe Clock and NeNe Ruler 1.0.0 passed certification and are on the Microsoft Store.**
 
 <p align="center">
   <a href="https://apps.microsoft.com/detail/9N6HZB1SXKBM"><img alt="NeNe Loupe — a magnified grid of screen pixels with the centre pixel outlined, and its colour shown as #33E699" src="assets/nene-loupe.webp" width="32%"></a>
@@ -71,8 +71,8 @@ Small, single-purpose tools. No UI library, no runtime to install. Snapshot: 18 
 | App | What it is | Built with | Status |
 | --- | --- | --- | --- |
 | **[NeNe Loupe](https://github.com/hideyukiMORI/nene-loupe)** | A tiny frameless screen loupe and colour picker. See the pixels behind the lens, copy the colour in the centre. | C++23 · Win32 | **On the [Microsoft Store](https://apps.microsoft.com/detail/9N6HZB1SXKBM)** · [v1.0.0](https://github.com/hideyukiMORI/nene-loupe/releases/latest) · portable ZIP also available |
-| **[NeNe Clock](https://github.com/hideyukiMORI/nene-clock)** | A quiet desktop clock. No frame, no buttons, no tray icon — just the time, in the typeface and colours you choose. | Java 21 · Swing (runtime bundled) | [v0.2.6](https://github.com/hideyukiMORI/nene-clock/releases/latest) — Windows installer, portable ZIP, Ubuntu `.deb` · **1.0.0 submitted to the Microsoft Store** (2026-10-18), awaiting certification |
-| **[NeNe Ruler](https://github.com/hideyukiMORI/nene-ruler)** | A frameless on-screen ruler. Lay a transparent frame over anything and read its width and height in physical pixels; click a number to copy it. | Rust · Win32 + Direct2D (Linux: x11rb + cairo) | [v0.1.0](https://github.com/hideyukiMORI/nene-ruler/releases/latest) — Windows MSI, portable ZIP, Ubuntu `.deb`, Linux ZIP · **1.0.0 submitted to the Microsoft Store** (2026-10-18), awaiting certification |
+| **[NeNe Clock](https://github.com/hideyukiMORI/nene-clock)** | A quiet desktop clock. No frame, no buttons, no tray icon — just the time, in the typeface and colours you choose. | Java 21 · Swing (runtime bundled) | **On the [Microsoft Store](https://apps.microsoft.com/detail/9N5G1ZXK0MV7)** · [latest release](https://github.com/hideyukiMORI/nene-clock/releases/latest) — Windows installer, portable ZIP, Ubuntu `.deb` |
+| **[NeNe Ruler](https://github.com/hideyukiMORI/nene-ruler)** | A frameless on-screen ruler. Lay a transparent frame over anything and read its width and height in physical pixels; click a number to copy it. | Rust · Win32 + Direct2D (Linux: x11rb + cairo) | **On the [Microsoft Store](https://apps.microsoft.com/detail/9N6JVHKL9LM3)** · [latest release](https://github.com/hideyukiMORI/nene-ruler/releases/latest) — Windows MSI, portable ZIP, Ubuntu `.deb`, Linux ZIP |
 | **[NeNe Folio](https://github.com/hideyukiMORI/nene-folio)** | A frameless Markdown notebook with a category drawer. View and edit, a short history of every save, search and regex replace, Vim-like keys; UI in 日本語 / English / 简体中文. | C23 · Win32 | [v0.1.0 beta](https://github.com/hideyukiMORI/nene-folio/releases/tag/v0.1.0) — portable ZIP |
 | **[NeNe Commander](https://github.com/hideyukiMORI/NeNeCommander)** | A keyboard-first dual-pane file manager; Windows, UNC, and WSL paths as typed, explicit boundaries. | C# · .NET 10 · WinUI 3 | In development — most of the MVP scope is on `main` · no download yet |
 
@@ -88,7 +88,7 @@ Numbers are **measured, not claimed** — each links to where you can check it y
 
 | | |
 | --- | --- |
-| **Shipped** | [NeNe Loupe on the Microsoft Store](https://apps.microsoft.com/detail/9N6HZB1SXKBM) · [NeNe Nib beta](https://github.com/hideyukiMORI/nene-nib/releases/tag/v0.1.0-beta.3) · [NeNe Clock](https://github.com/hideyukiMORI/nene-clock/releases/latest) and [NeNe Ruler](https://github.com/hideyukiMORI/nene-ruler/releases/latest) installers — both also submitted to the Microsoft Store (awaiting certification) · [NeNe Folio beta](https://github.com/hideyukiMORI/nene-folio/releases/tag/v0.1.0) |
+| **Shipped** | [NeNe Loupe](https://apps.microsoft.com/detail/9N6HZB1SXKBM), [NeNe Clock](https://apps.microsoft.com/detail/9N5G1ZXK0MV7) and [NeNe Ruler](https://apps.microsoft.com/detail/9N6JVHKL9LM3) on the Microsoft Store · [NeNe Nib beta](https://github.com/hideyukiMORI/nene-nib/releases/tag/v0.1.0-beta.3) · [NeNe Clock](https://github.com/hideyukiMORI/nene-clock/releases/latest) and [NeNe Ruler](https://github.com/hideyukiMORI/nene-ruler/releases/latest) installers on GitHub · [NeNe Folio beta](https://github.com/hideyukiMORI/nene-folio/releases/tag/v0.1.0) |
 | **Scale** | **11,300+ merged PRs** across my own repositories ([verify](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AhideyukiMORI+owner%3AhideyukiMORI&type=pullrequests)) · **42 public repos** |
 | **Languages** | C++23 · C23 · Rust · Java 21 · C# · Kotlin · Go · PHP 8.4 · Python 3.14 · TypeScript |
 | **Background** | 25 years of JavaScript and 20 years of PHP as a working engineer, from customer hearings through design, implementation, and operation |
