@@ -89,14 +89,18 @@ Also outside the web stack: **[NENE-PIXEL](https://github.com/hideyukiMORI/NENE-
 A family of terminal screensavers for Ubuntu on WSL2 in Windows Terminal. Hand-written AIs play a game forever while a cast of four trades banter; press `q` and your terminal comes back as it was. Snapshot: 27 October 2026.
 
 <p align="center">
-  <a href="https://github.com/hideyukiMORI/nene-gambit"><img alt="NeNe Gambit — a chess game in the NEON theme just after checkmate on move 28, with the move log and score bars beside the board" src="assets/term-gambit.webp" width="49%"></a>
+  <a href="https://github.com/hideyukiMORI/nene-gambit"><img alt="NeNe Gambit — a chess game in the NEON theme just after checkmate on move 28, with the move log and score bars beside the board" src="assets/term-gambit.webp" width="32%"></a>
   &nbsp;
-  <a href="https://github.com/hideyukiMORI/nene-swarm"><img alt="NeNe Swarm — STAGE 7 in big letters over a marching swarm and four shields, with the pilot NERVOUS.TMP asking why they are moving" src="assets/term-swarm.webp" width="49%"></a>
+  <a href="https://github.com/hideyukiMORI/nene-swarm"><img alt="NeNe Swarm — STAGE 7 in big letters over a marching swarm and four shields, with the pilot NERVOUS.TMP asking why they are moving" src="assets/term-swarm.webp" width="32%"></a>
+  &nbsp;
+  <a href="https://github.com/hideyukiMORI/nene-bolt"><img alt="NeNe Bolt — the AI runner PATIENT.LOG crossing the sky bridges of stage 3, with score, lives and banter under the field" src="assets/term-bolt.webp" width="32%"></a>
 </p>
 <p align="center">
-  <a href="https://github.com/hideyukiMORI/nene-igo"><img alt="NeNe Igo — a 19×19 Go board in the middle of a game, in the NEON theme" src="assets/term-igo.webp" width="49%"></a>
+  <a href="https://github.com/hideyukiMORI/nene-igo"><img alt="NeNe Igo — a 19×19 Go board in the middle of a game, in the NEON theme" src="assets/term-igo.webp" width="32%"></a>
   &nbsp;
-  <a href="https://github.com/hideyukiMORI/nene-sand"><img alt="NeNe Sand — sand, water, oil, fire, wood, lava and stone drawn in the terminal" src="assets/term-sand.webp" width="49%"></a>
+  <a href="https://github.com/hideyukiMORI/nene-poker"><img alt="NeNe Poker — a showdown at a table of four AIs, won by NIT with a pair of sixes" src="assets/term-poker.webp" width="32%"></a>
+  &nbsp;
+  <a href="https://github.com/hideyukiMORI/nene-sand"><img alt="NeNe Sand — sand, water, oil, fire, wood, lava and stone drawn in the terminal" src="assets/term-sand.webp" width="32%"></a>
 </p>
 
 <sub>Screenshots from each repository, taken in Windows Terminal on WSL2.</sub>
@@ -108,7 +112,7 @@ A family of terminal screensavers for Ubuntu on WSL2 in Windows Terminal. Hand-w
 | **[NeNe Igo](https://github.com/hideyukiMORI/nene-igo)** | Go on a 19×19 board, with a hand-written Monte Carlo tree search. | [v0.1.0](https://github.com/hideyukiMORI/nene-igo/releases/latest) |
 | **[NeNe Poker](https://github.com/hideyukiMORI/nene-poker)** | No-limit Texas hold'em at one table of four AIs. Imaginary chips, no money involved. | [v0.1.0](https://github.com/hideyukiMORI/nene-poker/releases/latest) |
 | **[NeNe Swarm](https://github.com/hideyukiMORI/nene-swarm)** | A fixed-screen shooter: a marching, diving swarm, shields, a capture beam, bonus stages, a top-five high score. | [v0.1.0 beta](https://github.com/hideyukiMORI/nene-swarm/releases/latest) |
-| **[NeNe Bolt](https://github.com/hideyukiMORI/nene-bolt)** | A side-scrolling action platformer, four stages and a boss. Press an arrow key and you take over from the AI. | Works from a source build · release soon |
+| **[NeNe Bolt](https://github.com/hideyukiMORI/nene-bolt)** | A side-scrolling action platformer, four stages and a boss. Press an arrow key and you take over from the AI. | [v0.1.0 beta](https://github.com/hideyukiMORI/nene-bolt/releases/latest) |
 | **[NeNe Sand](https://github.com/hideyukiMORI/nene-sand)** | Not a screensaver: a falling-sand incremental game. Draw with the mouse, discover reactions, sell grains, automate. | [v0.1.0](https://github.com/hideyukiMORI/nene-sand/releases/latest) |
 | **[NeNe Delve](https://github.com/hideyukiMORI/nene-delve)** | Endless procedurally generated mazes, explored and descended in text. | Scaffold only · in development |
 
@@ -124,7 +128,7 @@ Numbers are **measured, not claimed** — each links to where you can check it y
 
 | | |
 | --- | --- |
-| **Shipped** | [NeNe Loupe](https://apps.microsoft.com/detail/9N6HZB1SXKBM), [NeNe Clock](https://apps.microsoft.com/detail/9N5G1ZXK0MV7) and [NeNe Ruler](https://apps.microsoft.com/detail/9N6JVHKL9LM3) on the Microsoft Store · [NeNe Nib beta](https://github.com/hideyukiMORI/nene-nib/releases/tag/v0.1.0-beta.7) · [NeNe Clock](https://github.com/hideyukiMORI/nene-clock/releases/latest) and [NeNe Ruler](https://github.com/hideyukiMORI/nene-ruler/releases/latest) installers on GitHub · [NeNe Folio beta](https://github.com/hideyukiMORI/nene-folio/releases/tag/v0.3.0) · six Swift terminal apps for WSL2 ([Gambit](https://github.com/hideyukiMORI/nene-gambit), [Reversi](https://github.com/hideyukiMORI/nene-reversi), [Igo](https://github.com/hideyukiMORI/nene-igo), [Poker](https://github.com/hideyukiMORI/nene-poker), [Swarm](https://github.com/hideyukiMORI/nene-swarm), [Sand](https://github.com/hideyukiMORI/nene-sand)) |
+| **Shipped** | [NeNe Loupe](https://apps.microsoft.com/detail/9N6HZB1SXKBM), [NeNe Clock](https://apps.microsoft.com/detail/9N5G1ZXK0MV7) and [NeNe Ruler](https://apps.microsoft.com/detail/9N6JVHKL9LM3) on the Microsoft Store · [NeNe Nib beta](https://github.com/hideyukiMORI/nene-nib/releases/tag/v0.1.0-beta.7) · [NeNe Clock](https://github.com/hideyukiMORI/nene-clock/releases/latest) and [NeNe Ruler](https://github.com/hideyukiMORI/nene-ruler/releases/latest) installers on GitHub · [NeNe Folio beta](https://github.com/hideyukiMORI/nene-folio/releases/tag/v0.3.0) · seven Swift terminal apps for WSL2 ([Gambit](https://github.com/hideyukiMORI/nene-gambit), [Reversi](https://github.com/hideyukiMORI/nene-reversi), [Igo](https://github.com/hideyukiMORI/nene-igo), [Poker](https://github.com/hideyukiMORI/nene-poker), [Swarm](https://github.com/hideyukiMORI/nene-swarm), [Bolt](https://github.com/hideyukiMORI/nene-bolt), [Sand](https://github.com/hideyukiMORI/nene-sand)) |
 | **Scale** | **11,700+ merged PRs** across my own repositories ([verify](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AhideyukiMORI+owner%3AhideyukiMORI&type=pullrequests)) · **52 public repos** |
 | **Languages** | C++23 · C23 · Rust · Swift 6 · Java 21 · C# · Kotlin · Go · PHP 8.4 · Python 3.14 · TypeScript |
 | **Background** | 25 years of JavaScript and 20 years of PHP as a working engineer, from customer hearings through design, implementation, and operation |
