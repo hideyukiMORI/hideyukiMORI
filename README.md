@@ -50,7 +50,8 @@ Eight favourites out of **125 built-in colour schemes** — the 28 standard Vim 
 | **Tabs, splits and Ctrl+P** | Tabs live in the title bar and come back on the next start with caret and scroll position. Two-pane splits, side by side or stacked. Ctrl+P fuzzy-finds open tabs, bookmarks, recently closed files, and files in the current folder. Unsaved edits are autosaved every 30 seconds. |
 | **Syntax and Markdown** | Syntax highlighting for **28 languages** (C / C++, C#, Rust, Go, Python, PHP, TypeScript, SQL, shell, PowerShell, GDScript …). Live Markdown preview in the next pane (Ctrl+Shift+M); HTML from the browser pastes as Markdown. |
 | **Look** | Frameless window with a Mica title bar, follows the OS light / dark theme. **125 built-in colour schemes** (`:colorscheme`), plus user themes. Line wrapping, font size on Ctrl + wheel. |
-| **Speed, measured** | Medians on the reference machine: first frame 42 ms, window visible 32 ms, one keystroke 0.6 ms, a 16 MiB file opens in 50 ms. A speed gate of eight benchmarks runs before every release. The script and reference values are in the repo. |
+| **Speed, measured** | Medians on the reference machine: first frame 42 ms (190 ms in beta.3), window visible 32 ms, one keystroke 0.6 ms, a 16 MiB file opens in 50 ms. A speed gate of eight benchmarks runs before every release. The script and reference values are in the repo. |
+| **Getting faster (27 Oct)** | A day of speed experiments, every one measured A/B. A key press now reaches the **screen in 14.5 ms instead of 37 ms**; a keystroke on a long Japanese line takes 1.1 ms instead of 1.6, with the Markdown preview open 0.9 ms instead of 2.6, and Ctrl+P 1.2 ms instead of 1.7. The font-fallback part is on `main`; the rest is reviewed and waiting for my own trial. [What was tried, what worked, what did not](https://github.com/hideyukiMORI/nene-nib/blob/main/docs/quality/perf-stability-day-2026-10-27.md). |
 | **Not yet** | Files above 64 MiB, `:s` / `:g`, language colours inside Markdown code blocks. No code signing, installer, or auto-update in the beta. |
 
 Every feature is one numbered requirement in [`SPECIFICATION.md`](https://github.com/hideyukiMORI/nene-nib/blob/main/SPECIFICATION.md); the decisions are in [`docs/adr/`](https://github.com/hideyukiMORI/nene-nib/tree/main/docs/adr) and the measurements in [`docs/quality/gate-proofs.md`](https://github.com/hideyukiMORI/nene-nib/blob/main/docs/quality/gate-proofs.md).
@@ -88,11 +89,14 @@ Also outside the web stack: **[NENE-PIXEL](https://github.com/hideyukiMORI/NENE-
 A family of terminal screensavers for Ubuntu on WSL2 in Windows Terminal. Hand-written AIs play a game forever while a cast of four trades banter; press `q` and your terminal comes back as it was. Snapshot: 27 October 2026.
 
 <p align="center">
-  <a href="https://github.com/hideyukiMORI/nene-gambit"><img alt="NeNe Gambit — a chess game in the NEON theme just after checkmate on move 28, with the move log and score bars beside the board" src="assets/term-gambit.webp" width="32%"></a>
+  <a href="https://github.com/hideyukiMORI/nene-gambit"><img alt="NeNe Gambit — a chess game in the NEON theme just after checkmate on move 28, with the move log and score bars beside the board" src="assets/term-gambit.webp" width="49%"></a>
   &nbsp;
-  <a href="https://github.com/hideyukiMORI/nene-igo"><img alt="NeNe Igo — a 19×19 Go board in the middle of a game, in the NEON theme" src="assets/term-igo.webp" width="32%"></a>
+  <a href="https://github.com/hideyukiMORI/nene-swarm"><img alt="NeNe Swarm — STAGE 7 in big letters over a marching swarm and four shields, with the pilot NERVOUS.TMP asking why they are moving" src="assets/term-swarm.webp" width="49%"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/hideyukiMORI/nene-igo"><img alt="NeNe Igo — a 19×19 Go board in the middle of a game, in the NEON theme" src="assets/term-igo.webp" width="49%"></a>
   &nbsp;
-  <a href="https://github.com/hideyukiMORI/nene-sand"><img alt="NeNe Sand — sand, water, oil, fire, wood, lava and stone drawn in the terminal" src="assets/term-sand.webp" width="32%"></a>
+  <a href="https://github.com/hideyukiMORI/nene-sand"><img alt="NeNe Sand — sand, water, oil, fire, wood, lava and stone drawn in the terminal" src="assets/term-sand.webp" width="49%"></a>
 </p>
 
 <sub>Screenshots from each repository, taken in Windows Terminal on WSL2.</sub>
