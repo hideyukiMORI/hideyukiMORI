@@ -8,13 +8,106 @@
 
 ### Software engineer. I build small Windows desktop tools, terminal apps, and self-hosted business software in the open, and I put the proof next to every claim.
 
-**Five apps on the Microsoft Store.** **[NeNe Nib](https://apps.microsoft.com/detail/9NCLGDTFQ529)** — a text editor that switches between ordinary and Vim editing — reached **1.0.0** and went on the Store on 16 November. **[NeNe Folio](https://apps.microsoft.com/detail/9PCHS225SWBX)**, a Markdown notebook in plain C, is at **1.5.0** on the Store, with favourites, tags, a heading outline, and Mermaid state, ER, class, pie and Gantt diagrams. They join NeNe Loupe, NeNe Clock and NeNe Ruler.
+**NeNe Nib 1.2.0 is out.** [NeNe Nib](https://apps.microsoft.com/detail/9NCLGDTFQ529) is a 5 MB text editor for Windows 11: write like in Notepad, or press `Ctrl+Shift+Space` for a real Vim. It shows a 16 MiB file in **117 ms — Windows Notepad takes 908 ms** on the same PC ([how it was measured](https://dev.to/hideyukimori/117-ms-vs-908-ms-timing-my-text-editor-against-windows-notepad-5f57)). Version 1.2.0 adds optional caret motion and typing sparks.
 
-My current work spans **Windows desktop tools**, **Swift terminal apps for WSL2**, and the **NENE2 family of self-hosted business software**. **[NeNe Commander](https://github.com/hideyukiMORI/NeNeCommander)**, a keyboard-first dual-pane file manager in C# / WinUI 3, published its first **[preview builds](https://github.com/hideyukiMORI/NeNeCommander/releases/tag/v0.1.0-beta.2)** on 18–19 November. **[NeNe Ledger](https://github.com/hideyukiMORI/nene-ledger)**, a CSV / TSV editor in Rust, is at **[preview.3](https://github.com/hideyukiMORI/nene-ledger/releases/tag/v0.1.0-preview.3)** (15 November): open 1 GB files at once, edit, save, paste from Excel, find and replace, and edit long values in a formula-bar-style pane. The terminal family includes a news ticker as well as games; NeNe Delve and NeNe Summit are playable in development builds. The links below distinguish released software from work in progress.
+**Five apps on the Microsoft Store:** Nib, **[NeNe Folio](https://apps.microsoft.com/detail/9PCHS225SWBX)** (a Markdown notebook in plain C, 1.5.0), NeNe Loupe, NeNe Clock and NeNe Ruler.
 
-<sub>日本語: ソフトウェアエンジニア。<strong>Microsoft Store で5本のアプリを公開中です。テキストエディタ NeNe Nib は 1.0.0 になり、11 月 16 日に Store に出ました。Markdown ノートアプリ NeNe Folio は Store で 1.5.0</strong>（お気に入り・タグ・見出しの欄、Mermaid の状態遷移図・ER 図・クラス図・円グラフ・ガント）。Loupe・Clock・Ruler も Store で公開しています。Windows 向けデスクトップアプリ、WSL2 向けの Swift 製端末アプリ、自己ホスト型業務ツール群 NENE2 を公開開発しています。2ペインのファイルマネージャ NeNe Commander（C# / WinUI 3）は 11 月 18〜19 日に最初のプレビュー版を公開。CSV / TSV エディタ NeNe Ledger（Rust）は 11 月 15 日にプレビュー版の3つ目を公開（1 GB を即座に開き、編集・保存・Excel からの貼り付け・検索置換、長い値を数式バーのように直す欄）。端末アプリにはニュース表示の Wire があり、迷路の Delve と登山アクションの Summit は開発版で動く段階です。</sub>
+My current work spans **Windows desktop tools**, **Swift terminal apps for WSL2**, and the **NENE2 family of self-hosted business software**. **[NeNe Commander](https://github.com/hideyukiMORI/NeNeCommander)**, a keyboard-first dual-pane file manager in C# / WinUI 3, is at its fifth preview, **[beta.5](https://github.com/hideyukiMORI/NeNeCommander/releases/tag/v0.1.0-beta.5)** (25 November). **[NeNe Ledger](https://github.com/hideyukiMORI/nene-ledger)**, a CSV / TSV editor in Rust, is at **[preview.3](https://github.com/hideyukiMORI/nene-ledger/releases/tag/v0.1.0-preview.3)**. Every project, with real screens and numbers, is on my portfolio: **[hideyuki-mori.com](https://hideyuki-mori.com/)**. The links below distinguish released software from work in progress.
 
-<sub>Repository and release status checked: 20 November 2026.</sub>
+<sub>日本語: ソフトウェアエンジニア。<strong>テキストエディタ NeNe Nib の 1.2.0 を公開しました。</strong>メモ帳のように書けて、<code>Ctrl+Shift+Space</code> で本物の Vim の操作に切り替わる、約 5 MB の Windows 11 用エディタです。16 MiB のファイルを <strong>117 ms</strong> で表示します（同じ PC でメモ帳は 908 ms）。1.2.0 では、キャレットが滑らかに動く機能と、打つたびに粒が弾ける機能を足しました（どちらも既定はオフ）。Microsoft Store では Nib・Folio・Loupe・Clock・Ruler の 5 本を公開しています。2 画面のファイルマネージャ NeNe Commander は 11 月 25 日にプレビュー版 beta.5 を公開。作品の一覧は <a href="https://hideyuki-mori.com/">hideyuki-mori.com</a> にあります。</sub>
+
+<sub>Repository and release status checked: 27 November 2026.</sub>
+
+---
+
+## NeNe Nib — a 5 MB text editor for Windows 11: Notepad, or a real Vim, one key apart
+
+<a href="https://apps.microsoft.com/detail/9NCLGDTFQ529?mode=direct"><img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200" alt="Get NeNe Nib from the Microsoft Store"></a>
+
+[Source code](https://github.com/hideyukiMORI/nene-nib) · Windows 11 x64 · Free · **1.2.0** on the Store (signed and delivered by Microsoft) and on GitHub as **[v1.2.0](https://github.com/hideyukiMORI/nene-nib/releases/tag/v1.2.0)**. One executable, no installer and no runtime.
+
+<p align="center">
+  <a href="https://dev.to/hideyukimori/117-ms-vs-908-ms-timing-my-text-editor-against-windows-notepad-5f57"><img alt="117 ms vs 908 ms: time to open a 16 MiB file until the text appears. NeNe Nib 1.1.0 117 ms, Sakura Editor 2.4.3 383 ms, Windows Notepad 11.2609 908 ms. Median of 20 runs on one PC" src="assets/nib-speed.webp" width="100%"></a>
+</p>
+
+Measured from outside the apps by recording the screen at 60 fps and counting frames. Medians of 20 runs for time and 10 for memory.
+
+| | NeNe Nib 1.1.0 | Sakura Editor 2.4.3 | Windows Notepad 11.2609 |
+| --- | ---: | ---: | ---: |
+| Open a 200-line file, until text appears | **100 ms** | 267 ms | 450 ms |
+| Open a 16 MiB file, until text appears | **117 ms** | 383 ms | 908 ms |
+| RAM after opening 200 lines | 14.1 MiB | **11.6 MiB** | 40.4 MiB |
+| RAM after opening 16 MiB | **30.4 MiB** | 54.2 MiB | 88.7 MiB |
+| Package size | **4.75 MB** | 5.62 MB | 18.55 MB |
+
+<sub>One PC (Core i9-10850K, RTX 3090, Windows 11), default settings, the same window size, files in the OS cache. RAM is the private working set. Sakura Editor is 3.61 MB without its help files. Notepad's size excludes the runtimes it needs. <a href="https://github.com/hideyukiMORI/nene-nib/blob/main/docs/quality/editor-comparison-2026-11-23.md">Measurement record</a>.</sub>
+
+<p align="center">
+  <a href="https://youtu.be/xke9Ph3RQ3M"><img alt="Watch the 28-second NeNe Nib introduction on YouTube" src="https://img.youtube.com/vi/xke9Ph3RQ3M/hqdefault.jpg" width="32%"></a>
+  &nbsp;
+  <a href="https://youtu.be/hyy7_ePLoRg"><img alt="Watch NeNe Nib 1.2.0: the caret glides, and sparks fly as you type, on YouTube" src="https://img.youtube.com/vi/hyy7_ePLoRg/hqdefault.jpg" width="32%"></a>
+  &nbsp;
+  <a href="https://youtube.com/shorts/8rAQmeq9qfU"><img alt="Watch NeNe Nib and Windows Notepad open the same 16 MiB file, on YouTube" src="https://img.youtube.com/vi/8rAQmeq9qfU/hqdefault.jpg" width="32%"></a>
+</p>
+
+<sub>Videos: the 28-second introduction · caret motion in 1.2.0 (61 s) · Nib vs Notepad opening a 16 MiB file (10 s).</sub>
+
+### Why Nib
+
+- **Fast.** Text is on screen 100 ms after launch, and a 16 MiB file opens in 117 ms: 4.5× and 7.8× faster than Windows Notepad on the same PC.
+- **Small and light.** One 5.1 MB executable (5,089,792 bytes in 1.2.0). After opening a 16 MiB file, it used about a third of the memory Notepad used.
+- **Notepad or Vim, one key apart.** Edit the ordinary Windows way, or switch to a Vim written from scratch and replayed against real Vim 9.1 in thousands of tests.
+- **Ready for code when you want it.** Connect a language server (off by default) for diagnostics, completion, hover, go-to-definition, references, symbols, parameter info, formatting and rename.
+- **Made for large files.** UTF-8 files up to 1 GiB are read in the background, and a giant single line can be shown as a grid.
+- **Find anything.** `Ctrl+P` lists tabs, bookmarks, recent files and folder files; `Ctrl+Shift+F` searches a whole project, with a preview of each hit.
+- **Good with Japanese.** Japanese IME drawn in place, Shift_JIS, UTF-8 and UTF-16, and a Japanese, English or Simplified Chinese interface.
+- **Private.** No account, no personal information collected, and no network connections of its own.
+
+<p align="center">
+  <a href="https://apps.microsoft.com/detail/9NCLGDTFQ529"><img alt="NeNe Nib 1.2.0 editing C++ in Vim mode, with tabs in the title bar and the ordinary / Vim switch in the status bar" src="assets/nib-1.2-vim.webp" width="100%"></a>
+</p>
+<p align="center">
+  <img alt="NeNe Nib 1.2.0 in Vim INSERT mode with a language server connected, showing a completion list for a C++ member" src="assets/nib-1.2-lsp.webp" width="49%">
+  &nbsp;
+  <img alt="NeNe Nib 1.2.0 project-wide search, listing six hits for line across files with a preview pane" src="assets/nib-1.2-search.webp" width="49%">
+</p>
+
+<sub>Real windows of NeNe Nib 1.2.0 from the repository's <code>docs/images</code>.</sub>
+
+### New in 1.2.0: caret motion and typing sparks
+
+<p align="center">
+  <a href="https://youtu.be/hyy7_ePLoRg"><img alt="NeNe Nib 1.2.0 — caret in motion: 40 to 300 ms, 120 ms by default, sparks on every key, 125 themes, Vim built in" src="assets/nib-caret.webp" width="100%"></a>
+</p>
+
+- **The caret glides** to where it is going instead of jumping. Its four corners arrive one after another, so it leaves a short trail. Choose the time from 40 to 300 ms (`:set caretmotiontime=`, 120 ms by default).
+- **Typing never waits for it.** The motion is drawn on top of the text, and a new move starts from where the caret is drawn, so fast typing stays one continuous movement.
+- **Sparks** (`:set caretsparks`) throw a small burst in your theme's colours on every keystroke.
+- **Both are off by default.** They pause while the IME is composing and follow the Windows animation-effects setting.
+- Also in 1.2.0: resizable split panes, indent guides, font sizes in steps of 0.5 pt, and a clearer settings drawer.
+
+### Colour themes
+
+<p align="center">
+  <a href="https://github.com/hideyukiMORI/nene-nib#find-your-theme"><img alt="Eight NeNe Nib theme colour samples: alloy-core, code-rain, monalisa and red for dark backgrounds; rose-pine-dawn, everforest-light, gruvbox-light and github-light for light backgrounds" src="assets/nib-theme-gallery.svg" width="100%"></a>
+</p>
+
+Eight favourites out of **125 built-in colour schemes** — the 28 standard Vim names, VS Code defaults and popular IDE palettes, MonaLisa, and film-inspired originals. Switch with `:colorscheme <name>` or from Ctrl+P. [All theme names and sources](https://github.com/hideyukiMORI/nene-nib/blob/main/docs/design/2026-10-12-colorschemes.md) · [offline gallery (HTML)](https://github.com/hideyukiMORI/nene-nib/blob/main/docs/design/colorschemes.html)
+
+<sub>The image shows colour samples, not application screenshots. All 125 schemes ship in every release.</sub>
+
+| | |
+| --- | --- |
+| **A Vim engine written from scratch, checked against real Vim** | **6,892 fixtures generated by Vim 9.1** and 402 wrapped-text fixtures are replayed by CTest, and a differential fuzzer with fixed seeds keeps finding and fixing differences. Motions, operators, counts, text objects, registers, macros, marks, `.` repeat, blockwise VISUAL, `:s`, `:g`, `map`. |
+| **Speed, gated** | Inside the app, on the reference machine: first frame 41.9 ms, one keystroke 0.64 ms, a 16 MiB file opened in 49.8 ms. A speed gate of eight benchmarks runs before every release; the script and reference values are in the repo. (The 117 ms above is measured from outside, from launch to text on screen.) |
+| **Tabs, splits and Ctrl+P** | Tabs live in the title bar and come back on the next start with caret and scroll position. Resizable two-pane splits and a folder explorer. F1 lists every editor command. |
+| **Syntax and Markdown** | Syntax colours for 25 languages, rainbow indent guides, and a Markdown preview with tables, alerts, task lists and coloured code blocks. |
+| **Safe by default** | Autosave every 30 seconds, plus a last-resort backup before an uncaught exception ends the process; both are offered back on the next start. |
+| **Not yet** | Uppercase marks (`'A`–`'Z`) and `:marks`, `:sort` and the other `:g` / `:v` commands. Commentary, surround and auto-pairs are planned. |
+
+Every feature is one numbered requirement in [`SPECIFICATION.md`](https://github.com/hideyukiMORI/nene-nib/blob/main/SPECIFICATION.md); the decisions are in [`docs/adr/`](https://github.com/hideyukiMORI/nene-nib/tree/main/docs/adr).
+
+**Written about Nib:** [117 ms vs 908 ms: Timing My Text Editor Against Windows Notepad](https://dev.to/hideyukimori/117-ms-vs-908-ms-timing-my-text-editor-against-windows-notepad-5f57) · [A Caret That Glides in 120 ms Without Slowing Your Typing](https://dev.to/hideyukimori/a-caret-that-glides-in-120-ms-without-slowing-your-typing-4ma7) · [I Built a 4.4 MB Windows Text Editor That Switches Between Notepad-Style Editing and Vim](https://dev.to/hideyukimori/i-built-a-44-mb-windows-text-editor-that-switches-between-notepad-style-editing-and-vim-31o) — DEV · [NeNe Nib・サクラエディタ・メモ帳の起動を同じ条件で測りました](https://zenn.dev/xioncc/articles/nene-nib-editor-speed-comparison) · [キャレットが滑らかに動くテキストエディタ NeNe Nib 1.2.0：打つ速さはそのまま](https://zenn.dev/xioncc/articles/nene-nib-caret-motion) — Zenn · [本物の Vim と 6,892 件照合した](https://qiita.com/xioncc/items/bea993135a587a2e5a28) — Qiita
 
 ---
 
@@ -42,52 +135,6 @@ The **Store app is the main download** and is at **1.5.0** (published 19 Novembe
 
 ---
 
-## NeNe Nib — a fast text editor that toggles between ordinary and Vim editing
-
-**[Get NeNe Nib from the Microsoft Store](https://apps.microsoft.com/detail/9NCLGDTFQ529)** · [Source code](https://github.com/hideyukiMORI/nene-nib) · Windows 11 x64 · **1.0.0** — on the Store since 16 November 2026, signed and delivered by Microsoft. The same exe is on GitHub as a **[v1.0.0 ZIP](https://github.com/hideyukiMORI/nene-nib/releases/tag/v1.0.0)** (a Beta pre-release, unsigned, with `SHA256SUMS`; extract and run `NeNeNib.exe`, no installer and no runtime).
-
-<p align="center">
-  <a href="https://apps.microsoft.com/detail/9NCLGDTFQ529"><img alt="NeNe Nib showing its own README in Vim NORMAL mode, with two tabs in the title bar and the ordinary / Vim switch in the status bar" src="assets/nib-vim.webp" width="100%"></a>
-</p>
-
-One executable. C++23, plain Win32, Direct2D and DirectWrite — no UI library, no runtime dependency. It edits like Notepad until you flip one switch in the status bar; then it is Vim.
-
-<p align="center">
-  <img alt="NeNe Nib with Ctrl+P open, listing open tabs, bookmarks, recently closed files and files in the same folder" src="assets/nib-palette.webp" width="49%">
-  &nbsp;
-  <img alt="NeNe Nib in ordinary editing mode with a light theme, wrapping Japanese text" src="assets/nib-light.webp" width="49%">
-</p>
-
-<sub>Real windows, captured from a development build at the default font and size — <a href="https://github.com/hideyukiMORI/nene-nib/blob/main/docs/quality/showcase-2026-10-12.md">capture details</a>.</sub>
-
-### Colour themes
-
-<p align="center">
-  <a href="https://github.com/hideyukiMORI/nene-nib#find-your-theme"><img alt="Eight NeNe Nib theme colour samples: alloy-core, code-rain, monalisa and red for dark backgrounds; rose-pine-dawn, everforest-light, gruvbox-light and github-light for light backgrounds" src="assets/nib-theme-gallery.svg" width="100%"></a>
-</p>
-
-Eight favourites out of **125 built-in colour schemes** — the 28 standard Vim names, VS Code defaults and popular IDE palettes, MonaLisa, and film-inspired originals. Switch with `:colorscheme <name>` or from Ctrl+P. [All theme names and sources](https://github.com/hideyukiMORI/nene-nib/blob/main/docs/design/2026-10-12-colorschemes.md) · [offline gallery (HTML)](https://github.com/hideyukiMORI/nene-nib/blob/main/docs/design/colorschemes.html)
-
-<sub>The image shows colour samples, not application screenshots. All 125 schemes ship in 1.0.0.</sub>
-
-| | |
-| --- | --- |
-| **Two ways to edit, one toggle** | Ordinary editing (selection, clipboard, undo/redo, mouse) or Vim NORMAL / INSERT / VISUAL — motions, operators, counts, text objects, registers, macros, marks, `.` repeat, blockwise VISUAL, search with highlighting. Switch with the status bar or Ctrl+Shift+Space. |
-| **A Vim engine written from scratch, checked against real Vim** | **5,951 fixtures generated by Vim 9.1** are replayed in the 1.0.0 test suite, plus wrapped-text movement. Randomized differential tests against real Vim keep finding and fixing behavioural differences. `:s` with `\|` and groups, `gn` / `gN`, `map` / `nmap` / `inoremap`, INSERT `Ctrl-o`. |
-| **Japanese from day one** | IME composition drawn in place; Vim NORMAL turns the IME off and INSERT turns it back on. UTF-8, UTF-8 BOM, UTF-16 and Shift_JIS; CRLF / LF kept as read; UTF-8 files up to 1 GiB load in the background. Screen text in 日本語 / English / 简体中文 (`:set language=`). |
-| **Tabs, splits and Ctrl+P** | Tabs live in the title bar and come back on the next start with caret and scroll position. Two-pane splits and a folder explorer. Ctrl+P fuzzy-finds open tabs, bookmarks, recently closed files, and files in the current folder; F1 lists every editor command. |
-| **Notepad keys too** | Find / replace / go to line (Ctrl+F / Ctrl+H / Ctrl+G), print, date insertion, selectable save encoding and line endings. |
-| **Syntax and Markdown** | Syntax highlighting for **25 languages** (C / C++, C#, Rust, Go, Python, PHP, TypeScript, SQL, shell, PowerShell, GDScript …). Markdown preview in the next pane or full window (Ctrl+Shift+M) with local images and clickable task checkboxes. Opt-in **language-server diagnostics**. |
-| **Look** | Frameless window with a Mica title bar, follows the OS light / dark theme. **125 built-in colour schemes** (`:colorscheme`), plus user themes. Line wrapping, font size on Ctrl + wheel. |
-| **Safe by default** | Autosave every 30 seconds, plus a last-resort backup before an uncaught exception ends the process; both are offered back once on the next start. No account, and the app itself never connects to the network. |
-| **Speed, measured** | Medians on the reference machine: first frame 42 ms (190 ms in beta.3), window visible 32 ms, one keystroke 0.6 ms, a 16 MiB file opens in 50 ms. A speed gate of eight benchmarks runs before every release. The script and reference values are in the repo. |
-| **Next: 1.1.0** (in preparation, not released) | On `main`: project-wide search (Ctrl+Shift+F, `:grep`) with a preview pane, a settings drawer, LSP completion, hover and go-to-definition, Markdown tables and coloured code blocks, right-click menus in the text and on tabs, and easymotion jumps. [Current development record](https://github.com/hideyukiMORI/nene-nib/blob/main/docs/todo/current.md). |
-| **Not yet in 1.0.0** | LSP completion and go-to-definition (diagnostics only), colours inside Markdown code blocks, backreferences in search patterns. No installer or auto-update for the GitHub ZIP. The Chinese UI text is machine-translated and not yet reviewed by a native speaker. |
-
-Every feature is one numbered requirement in [`SPECIFICATION.md`](https://github.com/hideyukiMORI/nene-nib/blob/main/SPECIFICATION.md); the decisions are in [`docs/adr/`](https://github.com/hideyukiMORI/nene-nib/tree/main/docs/adr) and the measurements in [`docs/quality/gate-proofs.md`](https://github.com/hideyukiMORI/nene-nib/blob/main/docs/quality/gate-proofs.md).
-
----
-
 ## More Windows apps
 
 Desktop tools with different native stacks, from plain Win32 to Swing and WinUI. **NeNe Nib, NeNe Folio, NeNe Loupe, NeNe Clock and NeNe Ruler are on the Microsoft Store.**
@@ -105,9 +152,9 @@ Desktop tools with different native stacks, from plain Win32 to Swing and WinUI.
 | **[NeNe Loupe](https://github.com/hideyukiMORI/nene-loupe)** | A tiny frameless screen loupe and colour picker. See the pixels behind the lens, copy the colour in the centre. | C++23 · Win32 | **On the [Microsoft Store](https://apps.microsoft.com/detail/9N6HZB1SXKBM)** · [v1.0.0](https://github.com/hideyukiMORI/nene-loupe/releases/latest) · portable ZIP also available |
 | **[NeNe Clock](https://github.com/hideyukiMORI/nene-clock)** | A quiet desktop clock. No frame, no buttons, no tray icon — just the time, in the typeface and colours you choose. | Java 21 · Swing (runtime bundled) | **On the [Microsoft Store](https://apps.microsoft.com/detail/9N5G1ZXK0MV7)** · [latest release](https://github.com/hideyukiMORI/nene-clock/releases/latest) — Windows installer, portable ZIP, Ubuntu `.deb` |
 | **[NeNe Ruler](https://github.com/hideyukiMORI/nene-ruler)** | A frameless on-screen ruler. Lay a transparent frame over anything and read its width and height in physical pixels; click a number to copy it. | Rust · Win32 + Direct2D (Linux: x11rb + cairo) | **On the [Microsoft Store](https://apps.microsoft.com/detail/9N6JVHKL9LM3)** · [latest release](https://github.com/hideyukiMORI/nene-ruler/releases/latest) — Windows MSI, portable ZIP, Ubuntu `.deb`, Linux ZIP |
-| **[NeNe Nib](https://github.com/hideyukiMORI/nene-nib)** | A text editor that switches between ordinary (Notepad-style) and Vim editing; tabs, splits, Ctrl+P, Markdown preview, 125 colour schemes. [More above](#nene-nib--a-fast-text-editor-that-toggles-between-ordinary-and-vim-editing). | C++23 · Win32 + Direct2D | **On the [Microsoft Store](https://apps.microsoft.com/detail/9NCLGDTFQ529)** (1.0.0) · [v1.0.0 ZIP](https://github.com/hideyukiMORI/nene-nib/releases/tag/v1.0.0) on GitHub |
+| **[NeNe Nib](https://github.com/hideyukiMORI/nene-nib)** | A 5 MB text editor that switches between ordinary (Notepad-style) and Vim editing; opens a 16 MiB file in 117 ms; language servers, project search, Markdown preview, 125 colour schemes, optional caret motion. [More above](#nene-nib--a-5-mb-text-editor-for-windows-11-notepad-or-a-real-vim-one-key-apart). | C++23 · Win32 + Direct2D | **On the [Microsoft Store](https://apps.microsoft.com/detail/9NCLGDTFQ529)** (1.2.0) · [v1.2.0](https://github.com/hideyukiMORI/nene-nib/releases/tag/v1.2.0) on GitHub |
 | **[NeNe Folio](https://github.com/hideyukiMORI/nene-folio)** | A frameless Markdown notebook with a category drawer. View and edit (tables, nested lists, checklists, footnotes), favourites and tags, a heading outline, Mermaid diagrams and images, a short history of every save, search and regex replace, Vim-like keys; UI in 日本語 / English / 简体中文. | C23 · Win32 | **On the [Microsoft Store](https://apps.microsoft.com/detail/9PCHS225SWBX)** (1.5.0) · [v1.5.0 portable ZIP](https://github.com/hideyukiMORI/nene-folio/releases/tag/v1.5.0) on GitHub |
-| **[NeNe Commander](https://github.com/hideyukiMORI/NeNeCommander)** | A keyboard-first dual-pane file manager with Vim-style keys: copy, move, rename and delete with progress and cancel, a command palette, bookmarks, and a drive / WSL list. Windows, WSL and UNC paths are separate, explicit boundaries; files move between Windows and WSL distributions. | C# · .NET 10 · WinUI 3 | **Preview — [0.1.0-beta.2](https://github.com/hideyukiMORI/NeNeCommander/releases/tag/v0.1.0-beta.2)** (19 November · Windows 11 x64 ZIP, unsigned, runtimes bundled) — writing to UNC / network drives not yet; back up important files before trying it |
+| **[NeNe Commander](https://github.com/hideyukiMORI/NeNeCommander)** | A keyboard-first dual-pane file manager with Vim-style keys: copy, move, rename and delete with progress and cancel, a command palette, bookmarks, and a drive / WSL list. Windows, WSL and UNC paths are separate, explicit boundaries; files move between Windows and WSL distributions. | C# · .NET 10 · WinUI 3 | **Preview — [0.1.0-beta.5](https://github.com/hideyukiMORI/NeNeCommander/releases/tag/v0.1.0-beta.5)** (25 November · Windows 11 x64 ZIP, unsigned, runtimes bundled) — writing to UNC / network drives not yet; back up important files before trying it |
 | **[NeNe Docket](https://github.com/hideyukiMORI/NeNeDocket)** | A folder-based issue tracker with undo, per-account journals, history and optional signed permissions; no server. | Rust · Win32 + Direct2D / x11rb + cairo | In development — runs on X11, and on Windows 11 with a shared folder on a NAS (checked on the owner's machine, 16 November) · no release yet |
 | **[NeNe Ledger](https://github.com/hideyukiMORI/nene-ledger)** | A CSV / TSV editor that stays fast on huge files and never changes data on its own: cells are text (`00123` stays `00123`), untouched rows are written back byte for byte, heavy work runs in the background. | Rust · Win32 + Direct2D / x11rb + cairo | **Preview — [0.1.0-preview.3](https://github.com/hideyukiMORI/nene-ledger/releases/tag/v0.1.0-preview.3)** (15 November · Windows x64 ZIP, unsigned) — opens 1 GB / 12 million rows at once, edits cells and rows with undo, saves, pastes ranges from Excel, find / replace with regex, edits long values in a formula-bar-style pane, a command palette; sorting, filtering and non-Japanese UI not yet · custom licence (free use, no sale) |
 
@@ -159,13 +206,14 @@ All MIT, with specifications, architecture decisions and documented quality gate
 
 ## At a glance
 
-Release status and repository counts checked on **20 November 2026**. Performance measurements retain their original dates and test conditions.
+Release status and repository counts checked on **27 November 2026**. Performance measurements retain their original dates and test conditions.
 
 | | |
 | --- | --- |
-| **Shipped** | **Five Microsoft Store apps:** [Nib](https://apps.microsoft.com/detail/9NCLGDTFQ529), [Folio](https://apps.microsoft.com/detail/9PCHS225SWBX), [Loupe](https://apps.microsoft.com/detail/9N6HZB1SXKBM), [Clock](https://apps.microsoft.com/detail/9N5G1ZXK0MV7), [Ruler](https://apps.microsoft.com/detail/9N6JVHKL9LM3) · **eight released Swift terminal apps**, including [Wire v0.4.0](https://github.com/hideyukiMORI/nene-wire/releases/tag/v0.4.0) · previews of [NeNe Commander beta.2](https://github.com/hideyukiMORI/NeNeCommander/releases/tag/v0.1.0-beta.2) and [NeNe Ledger preview.3](https://github.com/hideyukiMORI/nene-ledger/releases/tag/v0.1.0-preview.3) |
-| **Scale** | **12,900+ merged PRs** across my own repositories ([verify](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AhideyukiMORI+owner%3AhideyukiMORI&type=pullrequests)) · **[55 public repositories](https://github.com/hideyukiMORI?tab=repositories&type=public)** |
+| **Shipped** | **Five Microsoft Store apps:** [Nib](https://apps.microsoft.com/detail/9NCLGDTFQ529), [Folio](https://apps.microsoft.com/detail/9PCHS225SWBX), [Loupe](https://apps.microsoft.com/detail/9N6HZB1SXKBM), [Clock](https://apps.microsoft.com/detail/9N5G1ZXK0MV7), [Ruler](https://apps.microsoft.com/detail/9N6JVHKL9LM3) · **eight released Swift terminal apps**, including [Wire v0.4.0](https://github.com/hideyukiMORI/nene-wire/releases/tag/v0.4.0) · previews of [NeNe Commander beta.5](https://github.com/hideyukiMORI/NeNeCommander/releases/tag/v0.1.0-beta.5) and [NeNe Ledger preview.3](https://github.com/hideyukiMORI/nene-ledger/releases/tag/v0.1.0-preview.3) |
+| **Scale** | **13,150+ merged PRs** across my own repositories ([verify](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AhideyukiMORI+owner%3AhideyukiMORI&type=pullrequests)) · **[55 public repositories](https://github.com/hideyukiMORI?tab=repositories&type=public)** |
 | **Languages** | C++23 · C23 · Rust · Swift 6 · Java 21 · C# · Kotlin · Go · PHP 8.4 · Python 3.14 · TypeScript |
+| **Portfolio** | **[hideyuki-mori.com](https://hideyuki-mori.com/)** — 42 projects with real screens, measured numbers and status, in English and Japanese |
 | **Background** | 25 years of JavaScript and 20 years of PHP as a working engineer, from customer hearings through design, implementation, and operation |
 
 ---
@@ -198,11 +246,15 @@ I write about what actually broke and what fixed it — [DEV](https://dev.to/hid
 **Featured**
 
 *English*
+- [117 ms vs 908 ms: Timing My Text Editor Against Windows Notepad](https://dev.to/hideyukimori/117-ms-vs-908-ms-timing-my-text-editor-against-windows-notepad-5f57) — DEV
+- [A Caret That Glides in 120 ms Without Slowing Your Typing](https://dev.to/hideyukimori/a-caret-that-glides-in-120-ms-without-slowing-your-typing-4ma7) — DEV
 - [I built a tiny PHP framework for AI-readable business APIs](https://dev.to/hideyukimori/i-built-a-tiny-php-framework-for-ai-readable-business-apis-48eo) — DEV
 - [MCP should not mean letting AI touch your database](https://dev.to/hideyukimori/mcp-should-not-mean-letting-ai-touch-your-database-57p1) — DEV
 - [A todo.txt shared by a human and AI agents](https://dev.to/hideyukimori/a-todotxt-shared-by-a-human-and-ai-agents-why-plain-text-beat-a-saas-board-for-my-workflow-5dbh) — DEV
 
 *日本語*
+- [NeNe Nib・サクラエディタ・メモ帳の起動を同じ条件で測りました](https://zenn.dev/xioncc/articles/nene-nib-editor-speed-comparison) — Zenn
+- [メモ帳のように使えて Vim にも切り替わる Windows エディタを作り、本物の Vim と 6,892 件照合した](https://qiita.com/xioncc/items/bea993135a587a2e5a28) — Qiita
 - [テストが全部緑でも壊せる｜リリース前アドバーサリアルレビューを常設する](https://zenn.dev/xioncc/articles/349a739826288b) — Zenn
 - [コンテキストが溢れる AI 協働を multi-session で回す｜指揮×担当を指示書と報告書で受け渡す](https://zenn.dev/xioncc/articles/4445ac86600d28) — Zenn
 - [レガシー PHP フレームワークの改修（NeNe）](https://zenn.dev/xioncc/articles/a2709df3e0de3b) — Zenn
